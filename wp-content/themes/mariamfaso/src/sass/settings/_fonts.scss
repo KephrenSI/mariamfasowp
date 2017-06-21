@@ -1,0 +1,102 @@
+/* Képhren SIMONIS
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Képhren SIMONIS
+ */
+
+// Variables
+
+// OpenSans
+@font-face {
+    font-family: 'opensans';
+    src: url('#{ $fontPath }OpenSans-Regular/OpenSans-Regular.eot');
+    src: url('#{ $fontPath }OpenSans-Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }OpenSans-Regular/OpenSans-Regular.woff2') format('woff2'),
+         url('#{ $fontPath }OpenSans-Regular/OpenSans-Regular.woff') format('woff'),
+         url('#{ $fontPath }OpenSans-Regular/OpenSans-Regular.ttf') format('truetype'),
+         url('#{ $fontPath }OpenSans-Regular/OpenSans-Regular.svg#regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('#{ $fontPath }OpenSans-Bold/OpenSans-Bold.eot');
+    src: url('#{ $fontPath }OpenSans-Bold/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }OpenSans-Bold/OpenSans-Bold.woff2') format('woff2'),
+         url('#{ $fontPath }OpenSans-Bold/OpenSans-Bold.woff') format('woff'),
+         url('#{ $fontPath }OpenSans-Bold/OpenSans-Bold.ttf') format('truetype'),
+         url('#{ $fontPath }OpenSans-Bold/OpenSans-Bold.svg#Bold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('#{ $fontPath }OpenSans-Semibold/OpenSans-Semibold.eot');
+    src: url('#{ $fontPath }OpenSans-Semibold/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }OpenSans-Semibold/OpenSans-Semibold.woff2') format('woff2'),
+         url('#{ $fontPath }OpenSans-Semibold/OpenSans-Semibold.woff') format('woff'),
+         url('#{ $fontPath }OpenSans-Semibold/OpenSans-Semibold.ttf') format('truetype'),
+         url('#{ $fontPath }OpenSans-Semibold/OpenSans-Semibold.svg#Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('#{ $fontPath }OpenSans-Light/OpenSans-Light.eot');
+    src: url('#{ $fontPath }OpenSans-Light/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }OpenSans-Light/OpenSans-Light.woff2') format('woff2'),
+         url('#{ $fontPath }OpenSans-Light/OpenSans-Light.woff') format('woff'),
+         url('#{ $fontPath }OpenSans-Light/OpenSans-Light.ttf') format('truetype'),
+         url('#{ $fontPath }OpenSans-Light/OpenSans-Light.svg#Light') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+// Oswald
+@font-face {
+    font-family: 'oswald';
+    src: url('#{ $fontPath }Oswald-Regular/Oswald-Regular.eot');
+    src: url('#{ $fontPath }Oswald-Regular/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }Oswald-Regular/Oswald-Regular.woff2') format('woff2'),
+         url('#{ $fontPath }Oswald-Regular/Oswald-Regular.woff') format('woff'),
+         url('#{ $fontPath }Oswald-Regular/Oswald-Regular.ttf') format('truetype'),
+         url('#{ $fontPath }Oswald-Regular/Oswald-Regular.svg#regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswald';
+    src: url('#{ $fontPath }Oswald-Light/Oswald-Light.eot');
+    src: url('#{ $fontPath }Oswald-Light/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }Oswald-Light/Oswald-Light.woff2') format('woff2'),
+         url('#{ $fontPath }Oswald-Light/Oswald-Light.woff') format('woff'),
+         url('#{ $fontPath }Oswald-Light/Oswald-Light.ttf') format('truetype'),
+         url('#{ $fontPath }Oswald-Light/Oswald-Light.svg#Light') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswald';
+    src: url('#{ $fontPath }Oswald-Bold/Oswald-Bold.eot');
+    src: url('#{ $fontPath }Oswald-Bold/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }Oswald-Bold/Oswald-Bold.woff2') format('woff2'),
+         url('#{ $fontPath }Oswald-Bold/Oswald-Bold.woff') format('woff'),
+         url('#{ $fontPath }Oswald-Bold/Oswald-Bold.ttf') format('truetype'),
+         url('#{ $fontPath }Oswald-Bold/Oswald-Bold.svg#Bold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+// PT
+@font-face {
+    font-family: 'pt';
+    src: url('#{ $fontPath }PT-Italic/PT-Italic.eot');
+    src: url('#{ $fontPath }PT-Italic/PT-Italic.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }PT-Italic/PT-Italic.woff2') format('woff2'),
+         url('#{ $fontPath }PT-Italic/PT-Italic.woff') format('woff'),
+         url('#{ $fontPath }PT-Italic/PT-Italic.ttf') format('truetype'),
+         url('#{ $fontPath }PT-Italic/PT-Italic.svg#regular') format('svg');
+    font-weight: 100;
+    font-style:italic;
+}

@@ -1,0 +1,336 @@
+.stat{
+	@media screen and (min-width: 681px){
+		.main__heading2{
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+			width: 100%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (max-width: 680px){
+		.main__heading2{
+			font-size: $subTitle3;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 2em 2.5%;
+			width: 100%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (min-width: 2001px){
+		.list3{
+			display: flex;
+			flex-direction: row-reverse;
+			width: 16.5em;
+			margin: 0 auto 3em;
+			position: relative;
+			z-index: 3;
+			&__elt{
+				text-align: center;
+				background-color: $gold;
+				transition: all 0.2s ease-in-out;
+				z-index: 1;
+				&--link{
+					padding: 1em 1.6em;
+					display: block;
+					color: $white;
+					text-decoration: none;
+					font-weight: 100;
+				}
+			}
+			&__elt:hover,
+			&__elt:focus{
+				background-color: $darkGold;
+			}
+			.active{
+				background-color: $darkGold;
+			}
+		}
+	}
+	@media screen and (max-width: 2000px){
+		.list3{
+			display: flex;
+			flex-direction: row-reverse;
+			width: 16.5em;
+			margin: 0 2.5%;
+			position: relative;
+			z-index: 3;
+			&__elt{
+				text-align: center;
+				background-color: $gold;
+				transition: all 0.2s ease-in-out;
+				z-index: 1;
+				&--link{
+					padding: 1em 1.6em;
+					display: block;
+					color: $white;
+					text-decoration: none;
+					font-weight: 100;
+				}
+			}
+			&__elt:hover,
+			&__elt:focus{
+				background-color: $darkGold;
+			}
+			.active{
+				background-color: $darkGold;
+			}
+		}
+	}
+	@media screen and (min-width: 2001px){
+		.list4{
+			max-width: 1800px;
+			margin: -1.1em auto 0;
+			height: 15em;
+		    position: relative;
+			&__elt{
+				width: 100%;
+		    	background-color: $white;
+			    box-sizing: border-box;
+			    height: 100%;
+			    padding: 3.5em 2.5%;
+			    position: absolute;
+			}
+			li+li{
+				opacity: 0;
+			}
+			&__elt:target{
+				opacity: 1;
+				z-index: 2;
+			}
+			&__global{
+				display: flex;
+				justify-content: between;
+				position: relative;
+			}
+			&__bloc{
+				text-align: center;
+				margin: 0 auto;
+			}
+			&__number{
+				color: $gold;
+				position: relative;
+				margin-bottom: 1em;
+				font-size: $title3;
+				font-weight: 800;
+			}
+			&__about{
+				width: 80%;
+				margin: 0 auto;
+				line-height: 1.35em;
+				position: relative;
+				font-size: $subTitle4;
+				font-weight: 600;
+			}
+		}	
+	}
+	@media screen and (min-width: 1086px) and (max-width: 2000px){
+		.list4{
+			margin: -1.1em auto 0;
+			height: 15em;
+		    position: relative;
+			&__elt{
+				width: 100%;
+		    	background-color: $white;
+			    box-sizing: border-box;
+			    height: 100%;
+			    padding: 3.5em 2.5%;
+			    position: absolute;
+			}
+			li+li{
+				opacity: 0;
+			}
+			&__elt:target{
+				opacity: 1;
+				z-index: 2;
+			}
+			&__global{
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				position: relative;
+			}
+			&__bloc{
+				width: 15%;
+				text-align: center;
+				margin: 0 auto;
+			}
+			&__number{
+				color: $gold;
+				position: relative;
+				margin-bottom: 1em;
+				font-size: $title3;
+				font-weight: 800;
+			}
+			&__about{
+				width: 80%;
+				margin: 0 auto;
+				line-height: 1.35em;
+				position: relative;
+				font-size: $subTitle4;
+				font-weight: 600;
+			}
+		}	
+	}
+	@media screen and (max-width: 1085px) and (min-width: 801px){
+		.list4{
+			margin: -1.1em auto 0;
+			height: 25em;
+		    position: relative;
+			&__elt{
+				width: 100%;
+		    	background-color: $white;
+			    box-sizing: border-box;
+			    height: 100%;
+			    padding: 3.5em 2.5%;
+			    position: absolute;
+			}
+			li+li{
+				opacity: 0;
+			}
+			&__elt:target{
+				opacity: 1;
+				z-index: 2;
+			}
+			&__global{
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				position: relative;
+			}
+			&__bloc{
+				width: 33.33%;
+				text-align: center;
+				margin: 0 auto 3em;
+			}
+			&__number{
+				color: $gold;
+				position: relative;
+				margin-bottom: 1em;
+				font-size: $title3;
+				font-weight: 800;
+			}
+			&__about{
+				line-height: 1.35em;
+				position: relative;
+				font-size: $subTitle4;
+				font-weight: 600;
+			}
+		}	
+	}
+	@media screen and (max-width: 800px) and (min-width: 651px){
+		.list4{
+			margin: -1.1em auto 0;
+			height: 30em;
+		    position: relative;
+			&__elt{
+		    	background-color: $white;
+			    box-sizing: border-box;
+			    height: 100%;
+			    padding: 3.5em 2.5%;
+			    position: absolute;
+			}
+			li+li{
+				opacity: 0;
+			}
+			&__elt:target{
+				opacity: 1;
+				z-index: 2;
+			}
+			&__global{
+				display: flex;
+				justify-content: between;
+				flex-wrap: wrap;
+				margin: auto;
+				position: relative;
+			}
+			&__bloc{
+				width: 33.33%;
+				text-align: center;
+				margin: 0 auto 3em;
+			}
+			&__number{
+				color: $gold;
+				position: relative;
+				margin-bottom: 1em;
+				font-size: $title3;
+				font-weight: 800;
+			}
+			&__about{
+				width: 80%;
+				margin: 0 auto;
+				line-height: 1.35em;
+				position: relative;
+				font-size: $subTitle4;
+				font-weight: 600;
+			}
+		}	
+	}
+	@media screen and (max-width: 650px) and (min-width: 426px){
+		.list4{
+			margin: -1.1em auto 0;
+			height: 40em;
+		    position: relative;
+			&__elt{
+		    	background-color: $white;
+			    box-sizing: border-box;
+			    height: 100%;
+			    padding: 3.5em 2.5%;
+			    position: absolute;
+			}
+			li+li{
+				opacity: 0;
+			}
+			&__elt:target{
+				opacity: 1;
+				z-index: 2;
+			}
+			&__global{
+				display: flex;
+				justify-content: between;
+				flex-wrap: wrap;
+				margin: auto;
+				position: relative;
+			}
+			&__bloc{
+				width: 50%;
+				text-align: center;
+				margin: 0 auto 3em;
+			}
+			&__number{
+				color: $gold;
+				position: relative;
+				margin-bottom: 1em;
+				font-size: $title3;
+				font-weight: 800;
+			}
+			&__about{
+				width: 80%;
+				margin: 0 auto;
+				line-height: 1.35em;
+				position: relative;
+				font-size: $subTitle4;
+				font-weight: 600;
+			}
+		}	
+	}
+}
+@media screen and (max-width: 425px){
+	.stat{
+		display: none;
+	}		
+}

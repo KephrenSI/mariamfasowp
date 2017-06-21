@@ -1,0 +1,73 @@
+/* Képhren/Projet
+*
+* /src/sass/styles.scss - Main style for projet
+*
+* coded by Képhren SIMONIS
+* started at 22/02/2017
+*/
+
+// 1. Settings - Variables globales
+@import "settings/paths";
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/sizes";
+
+// 2. Tools - Mixins globaux, functions & outils
+@import "tools/utils";
+
+// 3. Generic - Style de remise à zéro (reset, normalize…)
+@import "generic/meyer-reset";
+@import "generic/box-sizing";
+
+// 4. Base - Éléments bruts
+@import "base/root";
+
+// 5. Objects - Éléments de mise en forme non-cosmétique
+@import "objects/header";
+@import "objects/footer";
+@import "objects/main-banner";
+@import "objects/last-actu";
+@import "objects/last-event";
+@import "objects/last-projet";
+@import "objects/main-intro";
+@import "objects/main-don";
+@import "objects/main-stat";
+@import "objects/about";
+@import "objects/banner";
+@import "objects/article";
+@import "objects/articles";
+@import "objects/evenement";
+@import "objects/evenements";
+@import "objects/projet";
+@import "objects/projets";
+@import "objects/don";
+@import "objects/partenaria";
+@import "objects/voyage";
+@import "objects/contact";
+@import "objects/faq";
+
+
+// 6. Components - Design des composants, morceaux d'UI
+@import "components/header";
+@import "components/footer";
+@import "components/main-banner";
+@import "components/last-actu";
+@import "components/last-event";
+@import "components/last-projet";
+@import "components/main-intro";
+@import "components/main-don";
+@import "components/main-stat";
+@import "components/about";
+@import "components/banner";
+@import "components/article";
+@import "components/articles";
+@import "components/evenement";
+@import "components/evenements";
+@import "components/projet";
+@import "components/projets";
+@import "components/don";
+@import "components/partenaria";
+@import "components/voyage";
+@import "components/contact";
+@import "components/faq";
+

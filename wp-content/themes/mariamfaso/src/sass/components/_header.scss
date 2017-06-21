@@ -1,0 +1,278 @@
+@media screen and (min-width: 741px){
+	.header{
+		color: $white;
+		position: absolute;
+		z-index: 2;
+		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 1480px;
+		.burger{
+			display: none;
+		}
+		.burger-check{
+			display: none;
+		}
+		a{
+			padding: 0;
+		}
+		.menu{
+			padding-left: 2em;
+			margin: 0 auto;
+			width: 95%;
+			background-color: $gold;
+			display: flex;
+			justify-content: center;
+			&__elt{
+				position: relative;
+				margin: auto 0;
+	            .st0{
+	            	fill: none;
+	            	stroke: $white;
+	            	stroke-width: 15;
+	            	stroke-miterlimit: 10;
+	            	transition: all 0.5s ease-in-out;
+	            }
+	            .st1{
+	            	fill: $white;
+	            	transition: all 0.5s ease-in-out;
+	           	}
+	           	svg:hover,
+	           	svg:focus{
+					.st0{
+		            	stroke: $black;
+		            }
+		            .st1{
+		            	fill: $black;
+		           	}
+	           	}
+			}
+			&__elt:first-child{
+				margin-right: auto;
+			}
+			.active{
+				color: $black;
+			}
+			&__drop{
+				border-top: 2px solid transparent;
+				border-bottom: 2px solid transparent;
+				font-weight: 100;
+				transition: all 0.5s ease-in-out;
+				padding: 1.8em 2em;
+			}
+			&__drop:hover,
+			&__drop:focus{
+				color: $black;
+				border-top: 2px solid $black;
+				border-bottom: 2px solid $black;
+				a{
+					color: $black;
+				}
+			}
+			&__drop--txt{
+				cursor: default;
+			}
+			&__drop--link{
+				display: block;
+				transition: all 0.5s ease-in-out;
+				padding: 1.8em 2em;
+				color: $white;
+				text-decoration: none;
+			}
+			.list{
+				transition: all 0.5s ease-in-out;
+				width: 100%;
+				position: absolute;
+				top: -200px;
+				z-index: -1;
+				background-color: $black;
+				&__elt{
+					font-weight: 100;
+					margin: 0.5em;
+					border-bottom: 1px solid $gold;
+				}
+				.actived{
+					color: $gold;
+				}
+				&__link{
+					display: block;
+					font-weight: 100;
+					font-size: $subText;
+					color: $white;
+					text-decoration: none;
+					padding: 1em 0;
+					transition: all 0.5s ease-in-out;
+				}
+				&__elt:hover a,
+				&__elt:focus a{
+					color: $gold;
+				}
+			}
+			&__elt:hover,
+			&__elt:focus{
+				.list{
+					top: 75px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 740px){
+	.header{
+		.burger {
+            border: 0;
+            background: none;
+            border-bottom: 4px solid $white;
+            display: block;
+            outline: 0;
+            padding: 0;
+            cursor: pointer;
+            width: 2em;
+            transition: border-bottom 1s ease-in-out;
+            -webkit-transition: border-bottom 1s ease-in-out;
+            -moz-transition: border-bottom 1s ease-in-out;
+            padding-top: 1.5em;
+            margin: 1em 80% 5em;
+            position: absolute;
+            z-index: 5;
+        }
+        .burger::-moz-focus-inner {
+        	border: 0;
+            padding: 0;
+        }
+        .burger:before {
+            content: "";
+            border-bottom: 4px solid $white;
+            display: block;
+            width: 100%;
+            margin-bottom: 5px;
+            transition: -webkit-transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+            -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        }
+        .burger:after {
+            content: "";
+            border-bottom: 4px solid $white;
+            display: block;
+            width: 100%;
+            margin-bottom: 5px;
+            transition: -webkit-transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+            -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        }
+        .burger-check {
+        	display: none;
+        }
+        .burger-check:checked ~ .burger {
+        	border-bottom: 4px solid transparent;
+            transition: border-bottom 0.8s ease-in-out;
+            -webkit-transition: border-bottom 0.8s ease-in-out;
+        }
+        .burger-check:checked ~ .burger:before {
+        	transform: rotate(-405deg) translateY(1px) translateX(-3px);
+            -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+            transition: -webkit-transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+            -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        }
+        .burger-check:checked ~ .burger:after {
+        	transform: rotate(405deg) translateY(-4px) translateX(-5px);
+            -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+            transition: -webkit-transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+            -webkit-transition: -webkit-transform 0.5s ease-in-out;
+        }
+        .nav {
+        	position: absolute;
+        	z-index: 4;
+            background-color: $gold;
+            color: $white;
+            overflow: hidden;
+            max-height: 100px;
+            -webkit-transition: max-height 0.5s ease-in-out;
+            -moz-transition: max-height 0.5s ease-in-out;
+            transition: max-height 0.5s ease-in-out;
+
+            text-align: center;
+            font-size: 1em;
+            width: 100%;
+        }
+        .burger-check:checked ~ .nav {
+            max-height: 745px;
+            background-color: $black;
+            -webkit-transition: max-height 0.5s ease-in-out;
+            -moz-transition: max-height 0.5s ease-in-out;
+            transition: max-height 0.5s ease-in-out;    
+        }
+        .menu {
+        	z-index: 3;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            &__elt {
+            	color: $gold;
+	            list-style: none;
+	            font-size: $subTitle4;
+	            .st0{
+	            	fill: none;
+	            	stroke: $white;
+	            	stroke-width: 15;
+	            	stroke-miterlimit: 10;
+	            	transition: all 0.5s ease-in-out;
+	            }
+	            .st1{
+	            	fill: $white;
+	            	transition: all 0.5s ease-in-out;
+	           	}
+	           	svg:hover,
+	           	svg:focus{
+					.st0{
+		            	stroke: $black;
+		            }
+		            .st1{
+		            	fill: $black;
+		           	}
+	           	}
+	        }
+	        &__elt:first-child{
+				text-align: center;
+				padding: 0.6em 0;
+            }
+	        li+li a {
+	            color: $gold;
+	            text-decoration: none;
+	            display: inline-block;
+	            width: 100%;
+	            padding: 1em 15%;
+	            // margin-left: 50%;
+	            text-align: right;
+	        }
+	        li+li a:hover,
+	        li+li a:focus{
+	        	color: $black;
+				background-color: $gold;
+	        }
+	        .active{
+				color: $black;
+				background-color: $gold;
+			}
+	        &__elt p,
+	        &__elt:nth-child(4) li{
+	        	display: none;
+	        }
+	        li{
+	       		border-bottom: 1px solid $gold;
+	        }
+	        &__elt:nth-child(3),
+	        &__elt:nth-child(5){
+	        	border-bottom: 0px solid $gold;
+	        	padding: 0;
+	        }
+        }
+        
+	}
+}

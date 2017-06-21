@@ -1,0 +1,553 @@
+.evenement{
+	display: flex;
+	flex-wrap: wrap;
+	@media screen and (min-width: 681px){
+		.main__heading2{
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+			width: 100%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (max-width: 680px){
+		.main__heading2{
+			font-size: $subTitle3;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 2em 2.5%;
+			width: 100%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (min-width: 2001px){
+		.infos{
+			font-size: $subTitle4;
+			line-height: 1.5em;
+			margin: 3em 0 3em auto;
+			width: 15%;
+			&__meta{
+				width: 100%;
+				&--lieu{
+					color: $gold;
+					font-size: $subTitle3;
+					border-left: 2px solid $gold;
+					border-right: 2px solid $gold;
+					width: 80%;
+					text-align: center;
+					margin-bottom: 0.5em;
+				}
+				&--date{
+					font-size: $subText;
+					margin-bottom: 2em;
+				}
+				&--heure{
+					font-size: $subText;
+					color: $gold;
+					span{
+						color: $black;
+					}
+				}
+				&--adresse{
+					font-size: $subText;
+					color: $gold;
+					span{
+						color: $black;
+					}
+				}
+			}
+			&__follow{
+				margin-right: 2.5%;
+				text-align: right;
+				position: fixed;
+				bottom: 1em;
+				right: 0;
+				z-index: 0;
+				.main__heading4{
+					margin-bottom: 1em;
+				}
+				.link{
+	                .st1{
+	                	fill: $gold;
+	                	transition: all 0.2s ease-in-out;
+
+	                }
+				}
+				.link:hover,
+				.link:focus{
+					.st1{
+	                	fill: $darkGold;
+	                }
+				}
+			}
+		}
+		&__content{
+			position: relative;
+			z-index: 2;
+			margin: 3em auto 3em 0;
+			width: 30%;
+			&--containerimg{
+				height: 20em;
+				overflow: hidden;
+				position: relative;
+				margin-bottom: 2em;
+			}
+			&--img{
+				width: 100%;
+				height: auto;
+				vertical-align: bottom;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%); 
+			}
+		}
+		p{
+			line-height: 1.5em;
+			margin-bottom: 1em;
+		}
+	}
+	@media screen and (max-width: 2000px) and (min-width: 1101px){
+		.infos{
+			font-size: $subTitle4;
+			line-height: 1.5em;
+			margin: 3em 2.5%;
+			width: 15%;
+			&__meta{
+				width: 100%;
+				&--lieu{
+					color: $gold;
+					font-size: $subTitle3;
+					border-left: 2px solid $gold;
+					border-right: 2px solid $gold;
+					width: 100%;
+					text-align: center;
+					margin-bottom: 0.5em;
+				}
+				&--date{
+					font-size: $subText;
+					margin-bottom: 2em;
+				}
+				&--heure{
+					font-size: $subText;
+					color: $gold;
+					span{
+						color: $black;
+					}
+				}
+				&--adresse{
+					font-size: $subText;
+					color: $gold;
+					span{
+						color: $black;
+					}
+				}
+			}
+			&__follow{
+				width: 25%;
+				margin-right: 2.5%;
+				text-align: right;
+				position: fixed;
+				bottom: 1em;
+				right: 0;
+				z-index: 0;
+				.main__heading4{
+					margin-bottom: 1em;
+				}
+				.link{
+	                .st1{
+	                	fill: $gold;
+	                	transition: all 0.2s ease-in-out;
+
+	                }
+				}
+				.link:hover,
+				.link:focus{
+					.st1{
+	                	fill: $darkGold;
+	                }
+				}
+			}
+		}
+		&__content{
+			position: relative;
+			z-index: 2;
+			margin: 3em 2.5%;
+			width: 50%;
+			&--containerimg{
+				height: 20em;
+				overflow: hidden;
+				position: relative;
+				margin-bottom: 2em;
+			}
+			&--img{
+				width: 100%;
+				height: auto;
+				vertical-align: bottom;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%); 
+			}
+		}
+		p{
+			line-height: 1.5em;
+			margin-bottom: 1em;
+		}
+	}
+	@media screen and (max-width: 1100px) and (min-width: 951px){
+		.infos{
+			font-size: $subTitle4;
+			line-height: 1.5em;
+			margin: 3em 2.5%;
+			width: 15%;
+			&__meta{
+				width: 100%;
+				&--lieu{
+					color: $gold;
+					font-size: $title4;
+					border-left: 2px solid $gold;
+					border-right: 2px solid $gold;
+					width: 100%;
+					text-align: center;
+					margin-bottom: 0.5em;
+				}
+				&--date{
+					font-size: $subText;
+					margin-bottom: 2em;
+				}
+				&--heure{
+					font-size: $subText;
+					color: $gold;
+					span{
+						color: $black;
+					}
+				}
+				&--adresse{
+					font-size: $subText;
+					color: $gold;
+					span{
+						color: $black;
+					}
+				}
+			}
+			&__follow{
+				width: 25%;
+				margin-right: 2.5%;
+				text-align: right;
+				position: fixed;
+				bottom: 1em;
+				right: 0;
+				z-index: 0;
+				.main__heading4{
+					margin-bottom: 1em;
+				}
+				.link{
+	                .st1{
+	                	fill: $gold;
+	                	transition: all 0.2s ease-in-out;
+
+	                }
+				}
+				.link:hover,
+				.link:focus{
+					.st1{
+	                	fill: $darkGold;
+	                }
+				}
+			}
+		}
+		&__content{
+			position: relative;
+			z-index: 2;
+			margin: 3em 2.5%;
+			width: 60%;
+			&--containerimg{
+				height: 20em;
+				overflow: hidden;
+				position: relative;
+				margin-bottom: 2em;
+			}
+			&--img{
+				width: 100%;
+				height: auto;
+				vertical-align: bottom;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%); 
+			}
+		}
+		p{
+			line-height: 1.5em;
+			margin-bottom: 1em;
+		}
+	}
+	@media screen and (max-width: 950px) and (min-width: 686px){
+		.infos{
+			font-size: $subTitle4;
+			line-height: 1.5em;
+			margin: 3em 2.5%;
+			width: 15%;
+			&__meta{
+				width: 100%;
+				&--lieu{
+					color: $gold;
+					font-size: $subTitle4;
+					border-left: 2px solid $gold;
+					border-right: 2px solid $gold;
+					width: 100%;
+					text-align: center;
+					margin-bottom: 0.5em;
+				}
+				&--date{
+					font-size: $subText;
+					margin-bottom: 2em;
+				}
+				&--heure{
+					font-size: $subText;
+					color: $gold;
+					span{
+						color: $black;
+					}
+				}
+				&--adresse{
+					font-size: $subText;
+					color: $gold;
+					span{
+						color: $black;
+					}
+				}
+			}
+			&__follow{
+				width: 25%;
+				margin-right: 2.5%;
+				text-align: right;
+				position: fixed;
+				bottom: 1em;
+				right: 0;
+				z-index: 0;
+				.main__heading4{
+					margin-bottom: 1em;
+				}
+				.link{
+	                .st1{
+	                	fill: $gold;
+	                	transition: all 0.2s ease-in-out;
+
+	                }
+				}
+				.link:hover,
+				.link:focus{
+					.st1{
+	                	fill: $darkGold;
+	                }
+				}
+			}
+		}
+		&__content{
+			position: relative;
+			z-index: 2;
+			margin: 3em 2.5%;
+			width: 60%;
+			&--containerimg{
+				height: 20em;
+				overflow: hidden;
+				position: relative;
+				margin-bottom: 2em;
+			}
+			&--img{
+				width: 100%;
+				height: auto;
+				vertical-align: bottom;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%); 
+			}
+		}
+		p{
+			line-height: 1.5em;
+			margin-bottom: 1em;
+		}
+	}
+	@media screen and (max-width: 685px) and (min-width: 516px){
+		.infos{
+			font-size: $subTitle4;
+			line-height: 1.5em;
+			margin: 3em 2.5% 0;
+			width: 100%;
+			&__meta{
+				width: 100%;
+				&--lieu{
+					color: $gold;
+					font-size: $subTitle4;
+					border-left: 2px solid $gold;
+					border-right: 2px solid $gold;
+					width: 50%;
+					display: inline-block;
+					text-align: center;
+					margin-bottom: 0.5em;
+				}
+				&--date{
+					text-align: right;
+					font-size: $subText;
+					margin-bottom: 2em;
+					width: 49%;
+					display: inline-block;
+				}
+				&--heure{
+					font-size: $subText;
+					color: $gold;
+					span{
+						color: $black;
+					}
+				}
+				&--adresse{
+					font-size: $subText;
+					color: $gold;
+					span{
+						color: $black;
+					}
+				}
+			}
+			&__follow{
+				width: 100%;
+				margin: -5em 2.5% 0 0;
+				text-align: right;
+				.main__heading4{
+					margin-bottom: 1em;
+				}
+				.link{
+	                .st1{
+	                	fill: $gold;
+	                	transition: all 0.2s ease-in-out;
+
+	                }
+				}
+				.link:hover,
+				.link:focus{
+					.st1{
+	                	fill: $darkGold;
+	                }
+				}
+			}
+		}
+		&__content{
+			position: relative;
+			z-index: 2;
+			margin: 3em 2.5%;
+			width: 100%;
+			&--containerimg{
+				height: 20em;
+				overflow: hidden;
+				position: relative;
+				margin-bottom: 2em;
+			}
+			&--img{
+				width: 100%;
+				height: auto;
+				vertical-align: bottom;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%); 
+			}
+		}
+		p{
+			line-height: 1.5em;
+			margin-bottom: 1em;
+		}
+	}
+	@media screen and (max-width: 515px){
+		.infos{
+			font-size: $subTitle4;
+			line-height: 1.5em;
+			margin: 3em 2.5% 0;
+			width: 100%;
+			&__meta{
+				width: 100%;
+				&--lieu{
+					color: $gold;
+					font-size: $subTitle4;
+					border-left: 2px solid $gold;
+					border-right: 2px solid $gold;
+					width: 50%;
+					display: inline-block;
+					text-align: center;
+					margin-bottom: 0.5em;
+				}
+				&--date{
+					font-size: $subText;
+					margin-bottom: 2em;
+					width: 100%;
+					display: inline-block;
+				}
+				&--heure{
+					font-size: $subText;
+					color: $gold;
+					span{
+						color: $black;
+					}
+				}
+				&--adresse{
+					font-size: $subText;
+					color: $gold;
+					span{
+						color: $black;
+					}
+				}
+			}
+			&__follow{
+				.main__heading4{
+					margin-bottom: 1em;
+				}
+				.link{
+	                .st1{
+	                	fill: $gold;
+	                	transition: all 0.2s ease-in-out;
+
+	                }
+				}
+				.link:hover,
+				.link:focus{
+					.st1{
+	                	fill: $darkGold;
+	                }
+				}
+			}
+		}
+		&__content{
+			position: relative;
+			z-index: 2;
+			margin: 3em 2.5%;
+			width: 100%;
+			&--containerimg{
+				height: 20em;
+				overflow: hidden;
+				position: relative;
+				margin-bottom: 2em;
+			}
+			&--img{
+				width: 100%;
+				height: auto;
+				vertical-align: bottom;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%); 
+			}
+		}
+		p{
+			line-height: 1.5em;
+			margin-bottom: 1em;
+		}
+	}
+}

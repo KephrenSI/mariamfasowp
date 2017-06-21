@@ -1,0 +1,449 @@
+.footer{
+	background-color: $black;
+	position: relative;
+	z-index: 2;
+	font-weight: 100;
+	.main__heading3{
+		font-size: $subTitle3;
+		margin-bottom: 1em;
+		color: $gold;
+	}
+	.main__heading3:before{
+		content:"";
+		position: relative;
+		right: 15px;
+		border-left: 2px solid $gold;
+	}
+	@media screen and (min-width: 856px){
+	    .resume{
+	    	max-width: 1800px;
+	    	margin: 0 auto;
+	    	display: flex;
+	    	padding: 4em 2.5%;
+	    	background-color: $black;
+	    	color: $white;
+	    	.introduction{
+	    		border-right: 2px solid $gold;
+				width: 50%;
+				&__txt{
+					max-width: 450px;
+					margin: 0 1em 3em 0;
+					line-height: 1.35em;
+				}
+				&__link{
+					width: 13em;
+					text-align: center;
+					background-color: $gold;
+					transition: all 0.2s ease-in-out;
+					padding: 1em 1.6em;
+					color: $white;
+					text-decoration: none;
+				}
+				&__link:hover,
+				&__link:focus{
+					background-color: $darkGold;
+				}
+	    	}
+	    	.social{
+	    		margin: 0 2em;
+				width: 25%;
+				.contact{
+					padding-bottom: 2em;
+					border-bottom: 2px solid $gold;
+					.list{
+						&__elt{
+
+						}
+						&__link{
+							text-decoration: none;
+							line-height: 1.35em;
+							color: $gold;
+							span{
+								color: $white;
+							}
+						}
+					}
+				}
+				.follow{
+					padding-top: 2em;
+					.list{
+						display: flex;
+						&__elt{
+							margin: auto;
+						}
+						&__link{
+							text-decoration: none;
+	                        .st0{
+	                            fill: $black;
+	                        }
+	                        .st1{
+	                        	fill: $white;
+	                        	transition: all 0.2s ease-in-out;
+
+	                        }
+						}
+						&__link:hover,
+						&__link:focus{
+							.st1{
+	                        	fill: $gold;
+	                        }
+						}
+					}
+				}
+	    	}
+	    	.soutenir{
+	    		text-align: right;
+	    		border-left: 2px solid $gold;
+				width: 25%;
+				padding: 0 0 2em 2em;
+				.btn{
+					.list{
+						&__elt{
+
+						}
+						&__link{
+							margin: 1em 0;
+							display: block;
+							text-align: center;
+							background-color: $gold;
+							transition: all 0.2s ease-in-out;
+							padding: 1em 1em;
+							color: $white;
+							text-decoration: none;
+						}
+						&__link:hover,
+						&__link:focus{
+							background-color: $darkGold;
+						}
+					}
+				}
+	    	}
+	    }
+	}
+	@media screen and (max-width: 855px) and (min-width: 601px){
+	    .resume{
+	    	max-width: 1800px;
+	    	margin: 0 auto;
+	    	display: flex;
+	    	flex-wrap: wrap;
+	    	padding: 4em 2.5%;
+	    	background-color: $black;
+	    	color: $white;
+	    	.introduction{
+	    		border-bottom: 2px solid $gold;
+	    		margin-bottom: 2em;
+				width: 100%;
+				&__txt{
+					max-width: 450px;
+					margin: 0 1em 3em 0;
+					line-height: 1.35em;
+				}
+				&__link{
+					width: 13em;
+					text-align: center;
+					background-color: $gold;
+					transition: all 0.2s ease-in-out;
+					padding: 1em 1.6em;
+					color: $white;
+					text-decoration: none;
+				}
+				&__link:hover,
+				&__link:focus{
+					background-color: $darkGold;
+				}
+	    	}
+	    	.social{
+	    		border-bottom: 2px solid $gold;
+	    		padding-bottom: 2em;
+	    		margin-bottom: 2em;
+				display: flex;
+				width: 100%;
+				.contact{
+					width: 65%;
+					.list{
+						&__elt{
+
+						}
+						&__link{
+							text-decoration: none;
+							line-height: 1.35em;
+							color: $gold;
+							span{
+								color: $white;
+							}
+						}
+					}
+				}
+				.follow{
+					width: 35%;
+					.list{
+						display: flex;
+						&__elt{
+							margin: auto;
+						}
+						&__link{
+							text-decoration: none;
+	                        .st0{
+	                            fill: $black;
+	                        }
+	                        .st1{
+	                        	fill: $white;
+	                        	transition: all 0.2s ease-in-out;
+
+	                        }
+						}
+						&__link:hover,
+						&__link:focus{
+							.st1{
+	                        	fill: $gold;
+	                        }
+						}
+					}
+				}
+	    	}
+	    	.soutenir{
+				width: 100%;
+				.btn{
+					.list{
+						&__elt{
+
+						}
+						&__link{
+							margin: 1em 0;
+							display: block;
+							text-align: center;
+							background-color: $gold;
+							transition: all 0.2s ease-in-out;
+							padding: 1em 1em;
+							color: $white;
+							text-decoration: none;
+						}
+						&__link:hover,
+						&__link:focus{
+							background-color: $darkGold;
+						}
+					}
+				}
+	    	}
+	    }
+	}
+	@media screen and (max-width:600px){
+	    .resume{
+	    	max-width: 1800px;
+	    	margin: 0 auto;
+	    	display: flex;
+	    	flex-wrap: wrap;
+	    	padding: 4em 2.5%;
+	    	background-color: $black;
+	    	color: $white;
+	    	.introduction{
+	    		border-bottom: 2px solid $gold;
+	    		margin-bottom: 2em;
+				width: 100%;
+				&__txt{
+					max-width: 450px;
+					margin: 0 1em 3em 0;
+					line-height: 1.35em;
+				}
+				&__link{
+					width: 13em;
+					text-align: center;
+					background-color: $gold;
+					transition: all 0.2s ease-in-out;
+					padding: 1em 1.6em;
+					color: $white;
+					text-decoration: none;
+				}
+				&__link:hover,
+				&__link:focus{
+					background-color: $darkGold;
+				}
+	    	}
+	    	.social{
+	    		border-bottom: 2px solid $gold;
+	    		padding-bottom: 2em;
+	    		margin-bottom: 2em;
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				.contact{
+					width: 100%;
+					margin-bottom: 2em;
+					.list{
+						&__elt{
+
+						}
+						&__link{
+							text-decoration: none;
+							line-height: 1.35em;
+							color: $gold;
+							span{
+								color: $white;
+							}
+						}
+					}
+				}
+				.follow{
+					width: 100%;
+					.list{
+						display: flex;
+						&__elt{
+							margin: auto;
+						}
+						&__link{
+							text-decoration: none;
+	                        .st0{
+	                            fill: $black;
+	                        }
+	                        .st1{
+	                        	fill: $white;
+	                        	transition: all 0.2s ease-in-out;
+
+	                        }
+						}
+						&__link:hover,
+						&__link:focus{
+							.st1{
+	                        	fill: $gold;
+	                        }
+						}
+					}
+				}
+	    	}
+	    	.soutenir{
+				width: 100%;
+				.btn{
+					.list{
+						&__elt{
+
+						}
+						&__link{
+							margin: 1em 0;
+							display: block;
+							text-align: center;
+							background-color: $gold;
+							transition: all 0.2s ease-in-out;
+							padding: 1em 1em;
+							color: $white;
+							text-decoration: none;
+						}
+						&__link:hover,
+						&__link:focus{
+							background-color: $darkGold;
+						}
+					}
+				}
+	    	}
+	    }
+	}
+	@media screen and (min-width: 801px){
+	    .partenaires{
+	    	background-color: $white;
+			padding: 1em 2.5%;
+			position: relative;
+			.list{
+				max-width: 1800px;
+				margin: 0 auto;
+				display: flex;
+				flex-wrap: wrap;
+				&__elt{
+					margin: 1em;
+				}
+			}
+			&__logo{
+				img{
+					height: 6em;
+				}
+			}
+			&__link{
+				position: absolute;
+				bottom: -4em;
+				right: 0;
+				margin: 1em 2.5%;
+				display: block;
+				text-align: center;
+				background-color: $gold;
+				transition: all 0.2s ease-in-out;
+				padding: 1em 1em;
+				color: $white;
+				text-decoration: none;
+			}
+			&__link:hover,
+			&__link:focus{
+				background-color: $darkGold;
+			}
+	    }
+	}
+	@media screen and (max-width: 800px){
+	    .partenaires{
+	    	background-color: $white;
+			position: relative;
+			text-align: center;
+			.list{
+				padding: 1em 2.5%;
+				&__elt{
+					margin: 1em 0;
+				}
+			}
+			&__logo{
+				img{
+					height: 6em;
+				}
+			}
+			&__link{
+				// position: absolute;
+				// bottom: -4em;
+				// right: 0;
+				margin: 2em 0 0;
+				display: block;
+				text-align: center;
+				background-color: $gold;
+				transition: all 0.2s ease-in-out;
+				padding: 1em 1em;
+				color: $white;
+				text-decoration: none;
+			}
+			&__link:hover,
+			&__link:focus{
+				background-color: $darkGold;
+			}
+	    }
+	}
+	@media screen and (min-width: 456px){
+	    .cpr{
+	    	font-size: $cpr;
+	    	background-color: $black;
+	    	color: $white;
+	    	text-align: center;
+	    	padding: 2em;
+	    	a{
+	    		color: $gold;
+	    		text-decoration: none;
+	    	}
+	    	a:hover,
+	    	a:focus{
+	    		color: $darkGold;
+	    	}
+	    }
+	}
+	@media screen and (max-width: 455px){
+	    .cpr{
+	    	font-size: $cpr;
+	    	background-color: $black;
+	    	color: $white;
+	    	text-align: center;
+	    	padding: 2em 2.5%;
+	    	width: 20em;
+	    	line-height: 1.5em;
+	    	margin: 0 auto;
+	    	a{
+	    		color: $gold;
+	    		text-decoration: none;
+	    	}
+	    	a:hover,
+	    	a:focus{
+	    		color: $darkGold;
+	    	}
+	    }
+	}
+}

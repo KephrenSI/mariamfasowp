@@ -1,0 +1,431 @@
+.events{
+	display: flex;
+	flex-wrap: wrap;
+	@media screen and (min-width: 681px){
+		.main__heading2{
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+			width: 100%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (max-width: 680px){
+		.main__heading2{
+			font-size: $subTitle3;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 2em 2.5%;
+			width: 100%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (min-width: 2251px){
+		.main__heading3{
+			font-size: $title3;
+			margin-bottom: 1em;
+		}
+		.event{
+			width: 25%;
+			.bloc{
+				min-height: 65vh;
+				display: flex;
+				border-bottom: 2px solid $black;
+			}
+			&__img{
+				height: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+			}
+			&__containerimg{
+				order: 2;
+				width: 25%;
+				overflow: hidden;
+				position: relative;
+			}
+			&__txt{
+				padding: 2em; 
+				width: 75%;
+				&--lieu{
+					font-size: $subTitle4;
+					font-weight: 600;
+					float: left;
+					width: 50%;
+					color: $gold;
+					margin-bottom: 1em;
+				}
+				&--date{
+					font-size: $subTitle4;
+					float: right;
+					width: 50%;
+					text-align: right;
+					margin-bottom: 1em;
+				}
+				p{
+					line-height: 1.35em;
+					margin-bottom: 1em;
+				}
+				&--link{
+					float: right;
+					width: 13em;
+					text-align: center;
+					background-color: $gold;
+					transition: all 0.2s ease-in-out;
+					padding: 1em 1.6em;
+					color: $white;
+					text-decoration: none;
+					font-weight: 100;
+					bottom: 2em;
+				}
+				&--link:hover,
+				&--link:focus{
+					background-color: $darkGold;
+				}
+			}
+		}
+		.event:nth-of-type(n+2){
+			border-left: 2px solid $black;
+		}
+	}
+	@media screen and (min-width: 2001px) and (max-width: 2250px){
+		.main__heading3{
+			font-size: $title3;
+			margin-bottom: 1em;
+		}
+		.event{
+			width: 33.33%;
+			.bloc{
+				min-height: 65vh;
+				display: flex;
+				border-bottom: 2px solid $black;
+			}
+			&__img{
+				height: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+			}
+			&__containerimg{
+				order: 2;
+				width: 25%;
+				overflow: hidden;
+				position: relative;
+			}
+			&__txt{
+				padding: 2em; 
+				width: 75%;
+				&--lieu{
+					font-size: $subTitle4;
+					font-weight: 600;
+					float: left;
+					width: 50%;
+					color: $gold;
+					margin-bottom: 1em;
+				}
+				&--date{
+					font-size: $subTitle4;
+					float: right;
+					width: 50%;
+					text-align: right;
+					margin-bottom: 1em;
+				}
+				p{
+					line-height: 1.35em;
+					margin-bottom: 1em;
+				}
+				&--link{
+					float: right;
+					width: 13em;
+					text-align: center;
+					background-color: $gold;
+					transition: all 0.2s ease-in-out;
+					padding: 1em 1.6em;
+					color: $white;
+					text-decoration: none;
+					font-weight: 100;
+					bottom: 2em;
+				}
+				&--link:hover,
+				&--link:focus{
+					background-color: $darkGold;
+				}
+			}
+		}
+		.event:nth-of-type(n+2){
+			border-left: 2px solid $black;
+		}
+	}
+	@media screen and (min-width: 1001px) and (max-width: 2000px){
+		.main__heading3{
+			font-size: $title3;
+			margin-bottom: 1em;
+		}
+		.event{
+			width: 50%;
+			.bloc{
+				min-height: 70vh;
+				display: flex;
+				border-bottom: 2px solid $black;
+			}
+			&__img{
+				height: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+			}
+			&__containerimg{
+				order: 2;
+				width: 25%;
+				overflow: hidden;
+				position: relative;
+			}
+			&__txt{
+				padding: 2em; 
+				width: 75%;
+				&--lieu{
+					font-size: $subTitle4;
+					font-weight: 600;
+					float: left;
+					width: 50%;
+					color: $gold;
+					margin-bottom: 1em;
+				}
+				&--date{
+					font-size: $subTitle4;
+					float: right;
+					width: 50%;
+					text-align: right;
+					margin-bottom: 1em;
+				}
+				p{
+					line-height: 1.35em;
+					margin-bottom: 1em;
+				}
+				&--link{
+					float: right;
+					width: 13em;
+					text-align: center;
+					background-color: $gold;
+					transition: all 0.2s ease-in-out;
+					padding: 1em 1.6em;
+					color: $white;
+					text-decoration: none;
+					font-weight: 100;
+					bottom: 2em;
+				}
+				&--link:hover,
+				&--link:focus{
+					background-color: $darkGold;
+				}
+			}
+		}
+		.event:nth-child(n+2){
+			border-left: 2px solid $black;
+		}
+	}
+	@media screen and (min-width: 851px) and (max-width: 1000px){
+		.main__heading3{
+			font-size: $subTitle3;
+			margin-bottom: 1em;
+		}
+		.event{
+			width: 100%;
+			.bloc{
+				min-height: 65vh;
+				display: flex;
+				border-bottom: 2px solid $black;
+			}
+			&__img{
+				height: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+			}
+			&__containerimg{
+				order: 2;
+				width: 25%;
+				overflow: hidden;
+				position: relative;
+			}
+			&__txt{
+				padding: 2em; 
+				width: 75%;
+				&--lieu{
+					font-size: $subTitle4;
+					font-weight: 600;
+					float: left;
+					width: 50%;
+					color: $gold;
+					margin-bottom: 1em;
+				}
+				&--date{
+					font-size: $subTitle4;
+					float: right;
+					width: 50%;
+					text-align: right;
+					margin-bottom: 1em;
+				}
+				p{
+					line-height: 1.35em;
+					margin-bottom: 1em;
+				}
+				&--link{
+					float: right;
+					width: 13em;
+					text-align: center;
+					background-color: $gold;
+					transition: all 0.2s ease-in-out;
+					padding: 1em 1.6em;
+					color: $white;
+					text-decoration: none;
+					font-weight: 100;
+					bottom: 2em;
+				}
+				&--link:hover,
+				&--link:focus{
+					background-color: $darkGold;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 850px) and (min-width: 451px){
+		.main__heading3{
+			font-size: $subTitle3;
+			margin-bottom: 1em;
+		}
+		.event{
+			width: 100%;
+			.bloc{
+				display: flex;
+				border-bottom: 2px solid $black;
+			}
+			&__img{
+				height: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+			}
+			&__containerimg{
+				order: 2;
+				width: 25%;
+				overflow: hidden;
+				position: relative;
+			}
+			&__txt{
+				padding: 2em; 
+				width: 75%;
+				&--lieu{
+					font-size: $subTitle4;
+					font-weight: 600;
+					float: left;
+					width: 50%;
+					color: $gold;
+					margin-bottom: 1em;
+				}
+				&--date{
+					font-size: $subTitle4;
+					float: right;
+					width: 50%;
+					text-align: right;
+					margin-bottom: 1em;
+				}
+				p{
+					line-height: 1.35em;
+					margin-bottom: 1em;
+				}
+				&--link{
+					float: right;
+					width: 13em;
+					text-align: center;
+					background-color: $gold;
+					transition: all 0.2s ease-in-out;
+					padding: 1em 1.6em;
+					color: $white;
+					text-decoration: none;
+					font-weight: 100;
+					bottom: 2em;
+				}
+				&--link:hover,
+				&--link:focus{
+					background-color: $darkGold;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 450px){
+		.main__heading3{
+			font-size: $subTitle3;
+			margin-bottom: 1em;
+		}
+		.event{
+			width: 100%;
+			.bloc{
+				display: flex;
+				border-bottom: 2px solid $black;
+			}
+			&__containerimg{
+				display: none;
+			}
+			&__txt{
+				padding: 2em; 
+				width: 100%;
+				position: relative;
+				&--lieu{
+					font-size: $subTitle4;
+					font-weight: 600;
+					float: left;
+					width: 50%;
+					color: $gold;
+					margin-bottom: 1em;
+				}
+				&--date{
+					font-size: $subTitle4;
+					float: right;
+					width: 50%;
+					text-align: right;
+					margin-bottom: 1em;
+				}
+				p{
+					line-height: 1.35em;
+					margin-bottom: 3em;
+				}
+				&--link{
+					position: absolute;
+					width: 100%;
+					text-align: center;
+					background-color: $gold;
+					transition: all 0.2s ease-in-out;
+					padding: 1em 1.6em;
+					color: $white;
+					text-decoration: none;
+					font-weight: 100;
+					bottom: 0em;
+					left: 0;
+				}
+				&--link:hover,
+				&--link:focus{
+					background-color: $darkGold;
+				}
+			}
+		}
+	}
+}

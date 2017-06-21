@@ -1,0 +1,472 @@
+.last-projects{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	@media screen and (min-width: 681px){
+		.main__heading2{
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+			width: 100%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (max-width: 680px){
+		.main__heading2{
+			font-size: $subTitle3;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 2em 2.5%;
+			width: 100%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (min-width: 2551px){
+		.projets{
+		    overflow: hidden;
+		    width: 25%;
+			&__bloc{
+				// width: 25%;
+			    // float: left;
+			    overflow: hidden;
+			    position: relative;
+			    text-align: center;
+			    transition: all 0.2s ease 0s;
+			}
+			&__bloc:nth-child(n+2){
+				border-left: 2px solid $black;
+			}
+			&__bloc:after{
+				background-color: rgba($white, 0.9);
+			    content: "";
+			    display: block;
+			    width: 20em;
+			    height: 20em;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translateY(-50%) translateX(-50%) rotate(45.5deg);
+			    transform-origin: 50% 50%;
+			}
+			&__img{
+				transition: all 0.2s ease-in-out;
+				width: 100%;
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translateX(-50%);
+			}
+			&__bloc:hover img,
+			&__bloc:focus img{
+				width: 110%;
+				top: -5%;
+			}
+			&__containerimg{
+				height: 18em;
+				overflow: hidden;
+				position: relative;
+			}
+			&__caption{
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translateY(-50%) translateX(-50%);
+			    z-index: 1;
+			    opacity: 1;
+			}
+			&__link{
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    bottom: 0;
+			    right: 0;
+			    z-index: 1;
+			    color: transparent;
+			}
+			&__subtitle{
+				font-size: $subTitle3;
+			}
+			&__small{
+				font-size: $title4;
+				color: $gold;
+			}
+			.date{
+				margin-top: 2em;
+				font-weight: 600;
+			}
+		}
+		.projets:nth-child(n+2){
+			border-left: 2px solid $black;
+		}
+	}
+	@media screen and (min-width: 1351px) and (max-width: 2550px){
+		.projets{
+		    overflow: hidden;
+		    width: 25%;
+			&__bloc{
+				// width: 25%;
+			    // float: left;
+			    overflow: hidden;
+			    position: relative;
+			    text-align: center;
+			    transition: all 0.2s ease 0s;
+			}
+			&__bloc:nth-child(n+2){
+				border-left: 2px solid $black;
+			}
+			&__bloc:after{
+				background-color: rgba($white, 0.9);
+			    content: "";
+			    display: block;
+			    width: 20em;
+			    height: 20em;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translateY(-50%) translateX(-50%) rotate(45.5deg);
+			    transform-origin: 50% 50%;
+			}
+			&__img{
+				transition: all 0.2s ease-in-out;
+				width: 150%;
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translateX(-50%);
+			}
+			&__bloc:hover img,
+			&__bloc:focus img{
+				width: 160%;
+				top: -5%;
+			}
+			&__containerimg{
+				height: 18em;
+				overflow: hidden;
+				position: relative;
+			}
+			&__caption{
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translateY(-50%) translateX(-50%);
+			    z-index: 1;
+			    opacity: 1;
+			}
+			&__link{
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    bottom: 0;
+			    right: 0;
+			    z-index: 1;
+			    color: transparent;
+			}
+			&__subtitle{
+				font-size: $subTitle3;
+			}
+			&__small{
+				font-size: $title4;
+				color: $gold;
+			}
+			.date{
+				margin-top: 2em;
+				font-weight: 600;
+			}
+		}
+		.projets:nth-child(n+2){
+			border-left: 2px solid $black;
+		}
+	}
+	@media screen and (max-width: 1350px) and (min-width: 851px){
+		.projets{
+		    overflow: hidden;
+		    width: 25%;
+			&__bloc{
+				// width: 25%;
+			    // float: left;
+			    overflow: hidden;
+			    position: relative;
+			    text-align: center;
+			    transition: all 0.2s ease 0s;
+			}
+			&__bloc:nth-child(n+2){
+				border-left: 2px solid $black;
+			}
+			&__bloc:after{
+				background-color: rgba($white, 0.9);
+			    content: "";
+			    display: block;
+			    width: 15em;
+			    height: 15em;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translateY(-50%) translateX(-50%) rotate(45.5deg);
+			    transform-origin: 50% 50%;
+			}
+			&__img{
+				transition: all 0.2s ease-in-out;
+				height: 100%;
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translateX(-50%);
+			}
+			&__bloc:hover img,
+			&__bloc:focus img{
+				height: 110%;
+				top: -5%;
+			}
+			&__containerimg{
+				height: 18em;
+				overflow: hidden;
+				position: relative;
+			}
+			&__caption{
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translateY(-50%) translateX(-50%);
+			    z-index: 1;
+			    opacity: 1;
+			}
+			&__link{
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    bottom: 0;
+			    right: 0;
+			    z-index: 1;
+			    color: transparent;
+			}
+			&__subtitle{
+				font-size: $subTitle3;
+			}
+			&__small{
+				font-size: $title4;
+				color: $gold;
+			}
+			.date{
+				margin-top: 2em;
+				font-weight: 600;
+			}
+		}
+		.projets:nth-child(n+2){
+			border-left: 2px solid $black;
+		}
+	}
+	@media screen and (max-width: 850px) and (min-width: 451px){
+		.projets{
+		    overflow: hidden;
+		    width: 50%;
+			&__bloc{
+				// width: 25%;
+			    // float: left;
+			    overflow: hidden;
+			    position: relative;
+			    text-align: center;
+			    transition: all 0.2s ease 0s;
+			}
+			&__bloc:nth-child(even){
+				border-left: 2px solid $black;
+			}
+			&__bloc{
+				border-top: 2px solid $black;
+			}
+			&__bloc:after{
+				background-color: rgba($white, 0.9);
+			    content: "";
+			    display: block;
+			    width: 15em;
+			    height: 15em;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translateY(-50%) translateX(-50%) rotate(45.5deg);
+			    transform-origin: 50% 50%;
+			}
+			&__img{
+				transition: all 0.2s ease-in-out;
+				height: 100%;
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translateX(-50%);
+			}
+			&__bloc:hover img,
+			&__bloc:focus img{
+				height: 110%;
+				top: -5%;
+			}
+			&__containerimg{
+				height: 18em;
+				overflow: hidden;
+				position: relative;
+			}
+			&__caption{
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translateY(-50%) translateX(-50%);
+			    z-index: 1;
+			    opacity: 1;
+			}
+			&__link{
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    bottom: 0;
+			    right: 0;
+			    z-index: 1;
+			    color: transparent;
+			}
+			&__subtitle{
+				font-size: $subTitle3;
+			}
+			&__small{
+				font-size: $title4;
+				color: $gold;
+			}
+			.date{
+				margin-top: 2em;
+				font-weight: 600;
+			}
+		}
+		.projets:nth-child(n+2){
+			border-left: 2px solid $black;
+		}
+	}
+	@media screen and (max-width: 450px){
+		.projets{
+		    overflow: hidden;
+		    width: 100%;
+			&__bloc{
+				// width: 25%;
+			    // float: left;
+			    overflow: hidden;
+			    position: relative;
+			    text-align: center;
+			    transition: all 0.2s ease 0s;
+			}
+			&__bloc:nth-child(n+2){
+				border-left: 2px solid $black;
+			}
+			&__bloc:after{
+				background-color: rgba($white, 0.9);
+			    content: "";
+			    display: block;
+			    width: 15em;
+			    height: 15em;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translateY(-50%) translateX(-50%) rotate(45.5deg);
+			    transform-origin: 50% 50%;
+			}
+			&__img{
+				transition: all 0.2s ease-in-out;
+				height: 110%;
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translateX(-50%);
+			}
+			&__bloc:hover img,
+			&__bloc:focus img{
+				height: 120%;
+				top: -5%;
+			}
+			&__containerimg{
+				height: 18em;
+				overflow: hidden;
+				position: relative;
+			}
+			&__caption{
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translateY(-50%) translateX(-50%);
+			    z-index: 1;
+			    opacity: 1;
+			}
+			&__link{
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    bottom: 0;
+			    right: 0;
+			    z-index: 1;
+			    color: transparent;
+			}
+			&__subtitle{
+				font-size: $subTitle3;
+			}
+			&__small{
+				font-size: $title4;
+				color: $gold;
+			}
+			.date{
+				margin-top: 2em;
+				font-weight: 600;
+			}
+		}
+		.projets:nth-child(n+2){
+			border-top: 2px solid $black;
+		}
+	}
+	@media screen and (min-width: 681px){
+		.CTA{
+			width: 13em;
+			text-align: center;
+			margin: -3em 2.5% 0;
+			background-color: $gold;
+			transition: all 0.2s ease-in-out;
+			position: absolute;
+			top: 6em;
+			right: 0;
+			&__link{
+				padding: 1em 1.6em;
+				display: block;
+				color: $white;
+				text-decoration: none;
+				font-weight: 100;
+			}
+		}
+		.CTA:hover,
+		.CTA:focus{
+			background-color: $darkGold;
+		}
+	}
+	@media screen and (max-width: 680px){
+		.CTA{
+			width: 100%;
+			text-align: center;
+			background-color: $gold;
+			transition: all 0.2s ease-in-out;
+			&__link{
+				padding: 1em 1.6em;
+				display: block;
+				color: $white;
+				text-decoration: none;
+				font-weight: 100;
+			}
+		}
+		.CTA:hover,
+		.CTA:focus{
+			background-color: $darkGold;
+		}
+	}
+}

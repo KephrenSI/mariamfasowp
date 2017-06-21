@@ -1,0 +1,37 @@
+/* Képhren SIMONIS
+*
+* /sass/styles.scss - Main stylesheet
+*
+* coded by Képhren SIMONIS
+*/
+html{
+	font-family: 'opensans';
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.35em;
+	background-color: $white;
+	color: $black;
+}
+q{
+	font-family: 'pt';
+}
+h1, h2, h3, h4{
+	font-family: 'oswald';
+	font-weight: 800;
+	line-height: 1.35em;
+}
+.hidden{
+	display: none;
+}
+
+strong{
+	font-weight: 800;
+}
+
+.hp-wrap label:first-of-type{
+	display: none!important;
+}
+.ninja-forms-required-items{
+	margin-bottom: 1em;
+	color: $darkGrey;
+}

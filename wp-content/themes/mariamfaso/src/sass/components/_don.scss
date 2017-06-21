@@ -1,0 +1,1136 @@
+.dons{
+	display: flex;
+	flex-wrap: wrap;
+	@media screen and (min-width: 681px){
+		.main__heading2{
+			width: 100%;
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (max-width: 680px){
+		.main__heading2{
+			width: 100%;
+			font-size: $subTitle3;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 2em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (min-width: 1851px){
+		.unique{
+			background-color: $gold;
+			padding: 2em;
+			max-width: 800px;
+			width: 46.25%;
+			margin: 2em 1.25% 3em auto;
+			position: relative;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			p{
+				max-width: 460px;
+				line-height: 1.35em;
+				margin-bottom: 2em;
+			}
+			.form{
+				border-radius: 10px;
+				display: flex;
+				justify-content: around;
+				position: absolute;
+				bottom: 20px;
+				label{
+					transition: all 0.2s ease-in-out;
+					text-align: center;
+					padding: 1em;
+					background-color: $lightGrey;
+				}
+				label:nth-of-type(-n+3){
+					width: 15%;
+				}
+				label:nth-child(4) input{
+					height: 100%;
+				}
+				label:nth-of-type(-n+3):hover,
+				label:nth-of-type(-n+3):focus,
+				input:checked + label{
+					background-color: $darkGold;
+					color: $white;
+				}
+				label+label{
+					border-left: 1px solid $black;
+				}
+				&__input{
+					transition: all 0.2s ease-in-out;
+					width: 20%;
+					background-color: $lightGrey;
+					border: none;
+				}
+				&__input:hover,
+				&__input:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+				&__price{
+					display: none;
+				}
+				&__choice{
+					padding: 1em;
+					font-size: $currentText;
+				}
+				.btn{
+					transition: all 0.2s ease-in-out;
+					cursor: pointer;
+					font-size: $currentText;
+					padding: 0.5em 1em;
+					border: none;
+				}
+				.btn:hover,
+				.btn:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+			}
+		}
+		.mensuel{
+			max-width: 800px;
+			background-color: $gold;
+			padding: 2em;
+			width: 46.25%;
+			margin: 2em auto 3em 1.25%;
+			position: relative;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			p{
+				max-width: 460px;
+				line-height: 1.35em;
+				margin-bottom: 5em;
+			}
+			.form{
+				border-radius: 10px;
+				display: flex;
+				justify-content: around;
+				position: absolute;
+				bottom: 20px;
+				label{
+					transition: all 0.2s ease-in-out;
+					text-align: center;
+					padding: 1em;
+					background-color: $lightGrey;
+				}
+				label:nth-of-type(-n+3){
+					width: 15%;
+				}
+				label:nth-child(4) input{
+					height: 100%;
+				}
+				label:nth-of-type(-n+3):hover,
+				label:nth-of-type(-n+3):focus,
+				input:checked + label{
+					background-color: $darkGold;
+					color: $white;
+				}
+				label+label{
+					border-left: 1px solid $black;
+				}
+				&__input{
+					transition: all 0.2s ease-in-out;
+					width: 20%;
+					background-color: $lightGrey;
+					border: none;
+				}
+				&__input:hover,
+				&__input:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+				&__price{
+					display: none;
+				}
+				&__choice{
+					padding: 1em;
+					font-size: $currentText;
+				}
+				.btn{
+					transition: all 0.2s ease-in-out;
+					cursor: pointer;
+					font-size: $currentText;
+					padding: 0.5em 1em;
+					border: none;
+				}
+				.btn:hover,
+				.btn:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 1850px) and (min-width: 1111px){
+		.unique{
+			background-color: $gold;
+			padding: 2em;
+			width: 46.25%;
+			margin: 2em 1.25% 3em 2.5%;
+			position: relative;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			p{
+				max-width: 460px;
+				line-height: 1.35em;
+				margin-bottom: 2em;
+			}
+			.form{
+				line-height: 1.5em;
+				margin-right: 2em;
+				border-radius: 10px;
+				display: flex;
+				justify-content: around;
+				position: absolute;
+				bottom: 20px;
+				label{
+					transition: all 0.2s ease-in-out;
+					text-align: center;
+					padding: 1em;
+					background-color: $lightGrey;
+				}
+				label:nth-of-type(-n+3){
+					width: 15%;
+				}
+				label:nth-child(4) input{
+					height: 100%;
+				}
+				label:nth-of-type(-n+3):hover,
+				label:nth-of-type(-n+3):focus,
+				input:checked + label{
+					background-color: $darkGold;
+					color: $white;
+				}
+				label+label{
+					border-left: 1px solid $black;
+				}
+				&__input{
+					transition: all 0.2s ease-in-out;
+					width: 20%;
+					background-color: $lightGrey;
+					border: none;
+				}
+				&__input:hover,
+				&__input:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+				&__price{
+					display: none;
+				}
+				&__choice{
+					padding: 1em;
+					font-size: $currentText;
+				}
+				.btn{
+					transition: all 0.2s ease-in-out;
+					cursor: pointer;
+					font-size: $currentText;
+					padding: 0.5em 1em;
+					border: none;
+				}
+				.btn:hover,
+				.btn:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+			}
+		}
+		.mensuel{
+			background-color: $gold;
+			padding: 2em;
+			width: 46.25%;
+			margin: 2em 2.5% 3em 1.25%;
+			position: relative;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			p{
+				max-width: 460px;
+				line-height: 1.35em;
+				margin-bottom: 5em;
+			}
+			.form{
+				line-height: 1.5em;
+				margin-right: 2em;
+				border-radius: 10px;
+				display: flex;
+				justify-content: around;
+				position: absolute;
+				bottom: 20px;
+				label{
+					transition: all 0.2s ease-in-out;
+					text-align: center;
+					padding: 1em;
+					background-color: $lightGrey;
+				}
+				label:nth-of-type(-n+3){
+					width: 15%;
+				}
+				label:nth-child(4) input{
+					height: 100%;
+				}
+				label:nth-of-type(-n+3):hover,
+				label:nth-of-type(-n+3):focus,
+				input:checked + label{
+					background-color: $darkGold;
+					color: $white;
+				}
+				label+label{
+					border-left: 1px solid $black;
+				}
+				&__input{
+					transition: all 0.2s ease-in-out;
+					width: 20%;
+					background-color: $lightGrey;
+					border: none;
+				}
+				&__input:hover,
+				&__input:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+				&__price{
+					display: none;
+				}
+				&__choice{
+					padding: 1em;
+					font-size: $currentText;
+				}
+				.btn{
+					transition: all 0.2s ease-in-out;
+					cursor: pointer;
+					font-size: $currentText;
+					padding: 0.5em 1em;
+					border: none;
+				}
+				.btn:hover,
+				.btn:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 1110px) and (min-width: 951px){
+		.unique{
+			background-color: $gold;
+			padding: 2em;
+			width: 46.25%;
+			margin: 2em 1.25% 3em 2.5%;
+			position: relative;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			p{
+				max-width: 460px;
+				line-height: 1.35em;
+				margin-bottom: 2em;
+			}
+			.form{
+				margin-right: 2em;
+				border-radius: 10px;
+				display: flex;
+				justify-content: around;
+				position: absolute;
+				bottom: 20px;
+				span{
+					display: none;
+				}
+				label{
+					line-height: 1.5em;
+					transition: all 0.2s ease-in-out;
+					text-align: center;
+					padding: 1em;
+					background-color: $lightGrey;
+				}
+				label:nth-of-type(-n+3){
+					width: 15%;
+				}
+				label:nth-child(4) input{
+					height: 100%;
+				}
+				label:nth-of-type(-n+3):hover,
+				label:nth-of-type(-n+3):focus,
+				input:checked + label{
+					background-color: $darkGold;
+					color: $white;
+				}
+				label+label{
+					border-left: 1px solid $black;
+				}
+				&__input{
+					transition: all 0.2s ease-in-out;
+					width: 20%;
+					background-color: $lightGrey;
+					border: none;
+				}
+				&__input:hover,
+				&__input:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+				&__price{
+					display: none;
+				}
+				&__choice{
+					padding: 1em;
+					font-size: $currentText;
+				}
+				.btn{
+					transition: all 0.2s ease-in-out;
+					cursor: pointer;
+					font-size: $currentText;
+					padding: 0.5em 1em;
+					border: none;
+				}
+				.btn:hover,
+				.btn:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+			}
+		}
+		.mensuel{
+			background-color: $gold;
+			padding: 2em;
+			width: 46.25%;
+			margin: 2em 2.5% 3em 1.25%;
+			position: relative;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			p{
+				max-width: 460px;
+				line-height: 1.35em;
+				margin-bottom: 5em;
+			}
+			.form{
+				margin-right: 2em;
+				border-radius: 10px;
+				display: flex;
+				justify-content: around;
+				position: absolute;
+				bottom: 20px;
+				span{
+					display: none;
+				}
+				label{
+					line-height: 1.5em;
+					transition: all 0.2s ease-in-out;
+					text-align: center;
+					padding: 1em;
+					background-color: $lightGrey;
+				}
+				label:nth-of-type(-n+3){
+					width: 15%;
+				}
+				label:nth-child(4) input{
+					height: 100%;
+				}
+				label:nth-of-type(-n+3):hover,
+				label:nth-of-type(-n+3):focus,
+				input:checked + label{
+					background-color: $darkGold;
+					color: $white;
+				}
+				label+label{
+					border-left: 1px solid $black;
+				}
+				&__input{
+					transition: all 0.2s ease-in-out;
+					width: 20%;
+					background-color: $lightGrey;
+					border: none;
+				}
+				&__input:hover,
+				&__input:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+				&__price{
+					display: none;
+				}
+				&__choice{
+					padding: 1em;
+					font-size: $currentText;
+				}
+				.btn{
+					transition: all 0.2s ease-in-out;
+					cursor: pointer;
+					font-size: $currentText;
+					padding: 0.5em 1em;
+					border: none;
+				}
+				.btn:hover,
+				.btn:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 950px) and (min-width: 451px){
+		.unique{
+			background-color: $gold;
+			padding: 2em;
+			width: 100%;
+			margin: 2em 2.5% 3em 2.5%;
+			position: relative;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			p{
+				max-width: 460px;
+				line-height: 1.35em;
+				margin-bottom: 5em;
+			}
+			.form{
+				margin-right: 2em;
+				border-radius: 10px;
+				display: flex;
+				justify-content: around;
+				position: absolute;
+				bottom: 20px;
+				span{
+					display: none;
+				}
+				label{
+					line-height: 1.5em;
+					transition: all 0.2s ease-in-out;
+					text-align: center;
+					padding: 1em;
+					background-color: $lightGrey;
+				}
+				label:nth-of-type(-n+3){
+					width: 15%;
+				}
+				label:nth-child(4) input{
+					height: 100%;
+				}
+				label:nth-of-type(-n+3):hover,
+				label:nth-of-type(-n+3):focus,
+				input:checked + label{
+					background-color: $darkGold;
+					color: $white;
+				}
+				label+label{
+					border-left: 1px solid $black;
+				}
+				&__input{
+					transition: all 0.2s ease-in-out;
+					width: 20%;
+					background-color: $lightGrey;
+					border: none;
+				}
+				&__input:hover,
+				&__input:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+				&__price{
+					display: none;
+				}
+				&__choice{
+					padding: 1em;
+					font-size: $currentText;
+				}
+				.btn{
+					transition: all 0.2s ease-in-out;
+					cursor: pointer;
+					font-size: $currentText;
+					padding: 0.5em 1em;
+					border: none;
+				}
+				.btn:hover,
+				.btn:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+			}
+		}
+		.mensuel{
+			background-color: $gold;
+			padding: 2em;
+			width: 100%;
+			margin: 2em 2.5% 3em 2.5%;
+			position: relative;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			p{
+				max-width: 460px;
+				line-height: 1.35em;
+				margin-bottom: 5em;
+			}
+			.form{
+				margin-right: 2em;
+				border-radius: 10px;
+				display: flex;
+				justify-content: around;
+				position: absolute;
+				bottom: 20px;
+				span{
+					display: none;
+				}
+				label{
+					line-height: 1.5em;
+					transition: all 0.2s ease-in-out;
+					text-align: center;
+					padding: 1em;
+					background-color: $lightGrey;
+				}
+				label:nth-of-type(-n+3){
+					width: 15%;
+				}
+				label:nth-child(4) input{
+					height: 100%;
+				}
+				label:nth-of-type(-n+3):hover,
+				label:nth-of-type(-n+3):focus,
+				input:checked + label{
+					background-color: $darkGold;
+					color: $white;
+				}
+				label+label{
+					border-left: 1px solid $black;
+				}
+				&__input{
+					transition: all 0.2s ease-in-out;
+					width: 20%;
+					background-color: $lightGrey;
+					border: none;
+				}
+				&__input:hover,
+				&__input:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+				&__price{
+					display: none;
+				}
+				&__choice{
+					padding: 1em;
+					font-size: $currentText;
+				}
+				.btn{
+					transition: all 0.2s ease-in-out;
+					cursor: pointer;
+					font-size: $currentText;
+					padding: 0.5em 1em;
+					border: none;
+				}
+				.btn:hover,
+				.btn:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 450px){
+		.unique{
+			background-color: $gold;
+			padding: 2em;
+			width: 46.25%;
+			margin: 2em 1.25% 3em 2.5%;
+			position: relative;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			p{
+				max-width: 460px;
+				line-height: 1.35em;
+				margin-bottom: 2em;
+			}
+			.form{
+				border-radius: 10px;
+				display: flex;
+				justify-content: around;
+				position: absolute;
+				bottom: 20px;
+				label{
+					transition: all 0.2s ease-in-out;
+					text-align: center;
+					padding: 1em;
+					background-color: $lightGrey;
+				}
+				label:nth-of-type(-n+3){
+					width: 15%;
+				}
+				label:nth-child(4) input{
+					height: 100%;
+				}
+				label:nth-of-type(-n+3):hover,
+				label:nth-of-type(-n+3):focus,
+				input:checked + label{
+					background-color: $darkGold;
+					color: $white;
+				}
+				label+label{
+					border-left: 1px solid $black;
+				}
+				&__input{
+					transition: all 0.2s ease-in-out;
+					width: 20%;
+					background-color: $lightGrey;
+					border: none;
+				}
+				&__input:hover,
+				&__input:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+				&__price{
+					display: none;
+				}
+				&__choice{
+					padding: 1em;
+					font-size: $currentText;
+				}
+				.btn{
+					transition: all 0.2s ease-in-out;
+					cursor: pointer;
+					font-size: $currentText;
+					padding: 0.5em 1em;
+					border: none;
+				}
+				.btn:hover,
+				.btn:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+			}
+		}
+		.mensuel{
+			background-color: $gold;
+			padding: 2em;
+			width: 46.25%;
+			margin: 2em 2.5% 3em 1.25%;
+			position: relative;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			p{
+				max-width: 460px;
+				line-height: 1.35em;
+				margin-bottom: 5em;
+			}
+			.form{
+				border-radius: 10px;
+				display: flex;
+				justify-content: around;
+				position: absolute;
+				bottom: 20px;
+				label{
+					transition: all 0.2s ease-in-out;
+					text-align: center;
+					padding: 1em;
+					background-color: $lightGrey;
+				}
+				label:nth-of-type(-n+3){
+					width: 15%;
+				}
+				label:nth-child(4) input{
+					height: 100%;
+				}
+				label:nth-of-type(-n+3):hover,
+				label:nth-of-type(-n+3):focus,
+				input:checked + label{
+					background-color: $darkGold;
+					color: $white;
+				}
+				label+label{
+					border-left: 1px solid $black;
+				}
+				&__input{
+					transition: all 0.2s ease-in-out;
+					width: 20%;
+					background-color: $lightGrey;
+					border: none;
+				}
+				&__input:hover,
+				&__input:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+				&__price{
+					display: none;
+				}
+				&__choice{
+					padding: 1em;
+					font-size: $currentText;
+				}
+				.btn{
+					transition: all 0.2s ease-in-out;
+					cursor: pointer;
+					font-size: $currentText;
+					padding: 0.5em 1em;
+					border: none;
+				}
+				.btn:hover,
+				.btn:focus{
+					background-color: $darkGold;
+					color: $white;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1851px){
+	.complementaire{
+		color: $white;
+		display: flex;
+		margin: 2em 0 3em;
+		line-height: 1.35em;
+		.transparence{
+			max-width: 533.333px;
+			margin: 0 1.25% 0 auto;
+			padding: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+
+			}
+		}
+		.fisc{
+			max-width: 533.333px;
+			padding: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+				margin-bottom: 1em;
+			}
+			&__link{
+				transition: all 0.2s ease-in-out;
+				color: $black;
+				text-decoration: none;
+				font-weight: 100;
+				margin-top: 1em;
+				display: block;
+				background-color: $white;
+				padding: 0.5em;
+				width: 60%;
+				text-align: center;
+			}
+			&__link:hover,
+			&__link:focus{
+				color: $white;
+				background-color: $darkGold;
+			}
+		}
+		.soutient{
+			max-width: 533.333px;
+			margin: 0 auto 0 1.25%;
+			padding: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+
+			}
+		}
+	}
+}
+@media screen and (max-width: 1850px) and (min-width: 1081px){
+	.complementaire{
+		color: $white;
+		display: flex;
+		margin: 2em 2.5% 3em;
+		line-height: 1.35em;
+		.transparence{
+			padding: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+
+			}
+		}
+		.fisc{
+			margin: 0 2.5%;
+			padding: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+				margin-bottom: 1em;
+			}
+			&__link{
+				transition: all 0.2s ease-in-out;
+				color: $black;
+				text-decoration: none;
+				font-weight: 100;
+				margin-top: 1em;
+				display: block;
+				background-color: $white;
+				padding: 0.5em;
+				width: 60%;
+				text-align: center;
+			}
+			&__link:hover,
+			&__link:focus{
+				color: $white;
+				background-color: $darkGold;
+			}
+		}
+		.soutient{
+			padding: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+
+			}
+		}
+	}
+}
+@media screen and (max-width: 1080px) and (min-width: 851px){
+	.complementaire{
+		color: $white;
+		display: flex;
+		margin: 2em 2.5% 3em;
+		line-height: 1.35em;
+		.transparence{
+			padding: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+
+			}
+		}
+		.fisc{
+			margin: 0 2.5%;
+			padding: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+				margin-bottom: 1em;
+			}
+			&__link{
+				transition: all 0.2s ease-in-out;
+				color: $black;
+				text-decoration: none;
+				font-weight: 100;
+				margin-top: 1em;
+				display: block;
+				background-color: $white;
+				padding: 0.5em;
+				width: 100%;
+				text-align: center;
+			}
+			&__link:hover,
+			&__link:focus{
+				color: $white;
+				background-color: $darkGold;
+			}
+		}
+		.soutient{
+			padding: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+
+			}
+		}
+	}
+}
+@media screen and (max-width: 850px) and (min-width: 451px){
+	.complementaire{
+		color: $white;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 2em 2.5% 3em;
+		line-height: 1.35em;
+		.transparence{
+			width: 100%;
+			padding: 4em;
+			margin-bottom: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+
+			}
+		}
+		.fisc{
+			width: 100%;
+			padding: 4em;
+			margin-bottom: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+				margin-bottom: 1em;
+			}
+			&__link{
+				transition: all 0.2s ease-in-out;
+				color: $black;
+				text-decoration: none;
+				font-weight: 100;
+				margin-top: 1em;
+				display: block;
+				background-color: $white;
+				padding: 0.5em;
+				width: 60%;
+				text-align: center;
+			}
+			&__link:hover,
+			&__link:focus{
+				color: $white;
+				background-color: $darkGold;
+			}
+		}
+		.soutient{
+			width: 100%;
+			padding: 4em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+
+			}
+		}
+	}
+}
+@media screen and (max-width: 450px){
+	.complementaire{
+		color: $white;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 2em 2.5% 3em;
+		line-height: 1.35em;
+		.transparence{
+			width: 100%;
+			padding: 2em;
+			margin-bottom: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+
+			}
+		}
+		.fisc{
+			width: 100%;
+			padding: 2em;
+			margin-bottom: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+				margin-bottom: 1em;
+			}
+			&__link{
+				transition: all 0.2s ease-in-out;
+				color: $black;
+				text-decoration: none;
+				font-weight: 100;
+				margin-top: 1em;
+				display: block;
+				background-color: $white;
+				padding: 0.5em;
+				width: 100%;
+				text-align: center;
+			}
+			&__link:hover,
+			&__link:focus{
+				color: $white;
+				background-color: $darkGold;
+			}
+		}
+		.soutient{
+			width: 100%;
+			padding: 2em;
+			// background-image: url('../img/banner.jpg');
+			background-color: $black;
+			.main__heading3{
+				font-size: $title4;
+				margin-bottom: 1em;
+			}
+			&__txt{
+
+			}
+		}
+	}
+}

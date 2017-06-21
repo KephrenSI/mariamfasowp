@@ -1,0 +1,72 @@
+.banner{
+	height: 50vh;
+	background-image: url('../img/banner.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center 100%;
+	position: relative;
+	@media screen and (min-width: 1481px){
+		&__btn{
+			width: 20em;
+			text-align: center;
+			background-color: $gold;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			transition: all 0.2s ease-in-out;
+			&--link{
+				padding: 1em 1.6em;
+				display: block;
+				color: $white;
+				text-decoration: none;
+				font-weight: 100;
+				font-size: $title4;
+			}
+		}
+	}
+	@media screen and (min-width: 531px)and (max-width: 1480px){
+		&__btn{
+			width: 10em;
+			text-align: center;
+			background-color: $gold;
+			position: absolute;
+			bottom: 0;
+			// left: 97.5%;
+			// transform: translateX(-100%);
+			right: 2.5%;
+			transition: all 0.2s ease-in-out;
+			&--link{
+				padding: 1em 1.6em;
+				display: block;
+				color: $white;
+				text-decoration: none;
+				font-weight: 100;
+			}
+		}
+	}
+	@media screen and (max-width: 530px){
+		&__btn{
+			width: 80%;
+			text-align: center;
+			background-color: $gold;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			transition: all 0.2s ease-in-out;
+			&--link{
+				padding: 1em 1.6em;
+				display: block;
+				color: $white;
+				text-decoration: none;
+				font-weight: 400;
+				font-size: $title4;
+			}
+		}
+	}
+	&__btn:hover,
+	&__btn:focus{
+		background-color: $darkGold;
+	}
+}

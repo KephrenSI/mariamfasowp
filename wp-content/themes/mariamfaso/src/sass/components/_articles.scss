@@ -1,0 +1,989 @@
+@media screen and (min-width: 2501px){	
+	.news{
+		.main__heading2{
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+		.filtre{
+			position: absolute;
+			top: 20em;
+			right: 0;
+			width: 100%;
+			text-align: right;
+			.formulaire{
+				color: $gold;
+				margin: 0 auto;
+				padding: 1em 2.5%;
+				label{
+					display: block;
+					color: $gold;
+					font-size: $title4;
+					margin-bottom: 0.5em;
+					font-weight: 100;
+				}
+				select{
+					padding: 0em 0.5em;
+				    width: 25%;
+				    border: 1px solid $white;
+				    color: $white;
+				    border-radius: 3px;
+				    box-shadow: none;
+				    background: transparent;
+				    font-size: $subText;
+				    font-family: "opensans";
+					option{
+						background-color: $black;
+						box-shadow: none;
+						border: 1px solid white;
+						padding: 0.5em 1em;
+						border-bottom: 1px solid $gold;
+					}
+					option:hover,
+					option:focus{
+					}
+				}
+				select:focus {
+				    outline: none;
+				}
+			}
+		}
+		.actus{
+			padding: 2em 2.5% 3em;
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 3000px;
+			margin: 0 auto;
+			.actu{
+				position: relative;
+				overflow: hidden;
+				margin: 0.25em 0.16%;
+				width: 19.666%;
+				background-color: $black;
+				color: $white;
+				.picture{
+					&__img{
+						width: 100%;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+					&__containerimg{
+						height: 15em;
+						overflow: hidden;
+						position: relative;
+					}
+					&__categorie{
+						margin: 1em 5%;
+						float: left;
+						color: $gold;
+						font-size: $subTitle4;
+						border-left: 2px solid $gold;
+						border-right: 2px solid $gold;
+						width: 30%;
+						text-align: center;
+					}
+					.main__heading3{
+						text-shadow: 2px 2px $black;
+						position: absolute;
+						font-size: $title4;
+						font-weight: 400;
+						top: 5em;
+						left: 5%;
+						margin-right: 5%;
+					}
+					&__date{
+						width: 60%;
+						text-align: right;
+						font-size: $subTitle4;
+						color: $gold;
+						float: right;
+						padding: 1em 5%;
+					}
+				}
+				.preamble{
+					padding: 1em 5%;
+					h4{
+						font-weight: 400;
+						margin-bottom: 0.5em;
+					}
+					p{
+						font-weight: 100;
+						line-height: 1.5em;
+					}
+				}
+				.more{
+					&__link{
+						border-top: 2px solid $gold;
+						color: $gold;
+						text-decoration: none;
+						padding: 1.6em 5%;
+						display: block;
+						font-weight: 100;
+						transition: all 0.2s ease-in-out;
+						margin-top: 1em;
+					}
+					&__link:hover,
+					&__link:focus{
+						background-color: $gold;
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1501px) and (max-width: 2500px){	
+	.news{
+		.main__heading2{
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+		.filtre{
+			position: absolute;
+			top: 20em;
+			right: 0;
+			width: 100%;
+			text-align: right;
+			.formulaire{
+				color: $gold;
+				margin: 0 auto;
+				padding: 1em 2.5%;
+				label{
+					display: block;
+					color: $gold;
+					font-size: $title4;
+					margin-bottom: 0.5em;
+					font-weight: 100;
+				}
+				select{
+					padding: 0em 0.5em;
+				    width: 25%;
+				    border: 1px solid $white;
+				    color: $white;
+				    border-radius: 3px;
+				    box-shadow: none;
+				    background: transparent;
+				    font-size: $subText;
+				    font-family: "opensans";
+					option{
+						background-color: $black;
+						box-shadow: none;
+						border: 1px solid white;
+						padding: 0.5em 1em;
+						border-bottom: 1px solid $gold;
+					}
+					option:hover,
+					option:focus{
+					}
+				}
+				select:focus {
+				    outline: none;
+				}
+			}
+		}
+		.actus{
+			padding: 2em 2.5% 3em;
+			display: flex;
+			flex-wrap: wrap;
+			.actu{
+				position: relative;
+				overflow: hidden;
+				margin: 0.25em 0.16%;
+				width: 24.666%;
+				background-color: $black;
+				color: $white;
+				.picture{
+					&__img{
+						width: 100%;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+					&__containerimg{
+						height: 15em;
+						overflow: hidden;
+						position: relative;
+					}
+					&__categorie{
+						margin: 1em 5%;
+						float: left;
+						color: $gold;
+						font-size: $subTitle4;
+						border-left: 2px solid $gold;
+						border-right: 2px solid $gold;
+						width: 30%;
+						text-align: center;
+					}
+					.main__heading3{
+						text-shadow: 2px 2px $black;
+						position: absolute;
+						font-size: $title4;
+						font-weight: 400;
+						top: 5em;
+						left: 5%;
+						margin-right: 5%;
+					}
+					&__date{
+						width: 60%;
+						text-align: right;
+						font-size: $subTitle4;
+						color: $gold;
+						float: right;
+						padding: 1em 5%;
+					}
+				}
+				.preamble{
+					padding: 1em 5%;
+					h4{
+						font-weight: 400;
+						margin-bottom: 0.5em;
+					}
+					p{
+						font-weight: 100;
+						line-height: 1.5em;
+					}
+				}
+				.more{
+					&__link{
+						border-top: 2px solid $gold;
+						color: $gold;
+						text-decoration: none;
+						padding: 1.6em 5%;
+						display: block;
+						font-weight: 100;
+						transition: all 0.2s ease-in-out;
+						margin-top: 1em;
+					}
+					&__link:hover,
+					&__link:focus{
+						background-color: $gold;
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1500px) and (min-width: 1151px){	
+	.news{
+		.main__heading2{
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+		.filtre{
+			position: absolute;
+			top: 20em;
+			right: 0;
+			width: 100%;
+			text-align: right;
+			.formulaire{
+				color: $gold;
+				margin: 0 auto;
+				padding: 1em 2.5%;
+				label{
+					display: block;
+					color: $gold;
+					font-size: $title4;
+					margin-bottom: 0.5em;
+					font-weight: 100;
+				}
+				select{
+					padding: 0em 0.5em;
+				    width: 25%;
+				    border: 1px solid $white;
+				    color: $white;
+				    border-radius: 3px;
+				    box-shadow: none;
+				    background: transparent;
+				    font-size: $subText;
+				    font-family: "opensans";
+					option{
+						background-color: $black;
+						box-shadow: none;
+						border: 1px solid white;
+						padding: 0.5em 1em;
+						border-bottom: 1px solid $gold;
+					}
+					option:hover,
+					option:focus{
+					}
+				}
+				select:focus {
+				    outline: none;
+				}
+			}
+		}
+		.actus{
+			padding: 2em 2.5% 3em;
+			display: flex;
+			flex-wrap: wrap;
+			.actu{
+				position: relative;
+				overflow: hidden;
+				margin: 0.25em 0.16%;
+				width: 33%;
+				background-color: $black;
+				color: $white;
+				.picture{
+					&__img{
+						width: 100%;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+					&__containerimg{
+						height: 15em;
+						overflow: hidden;
+						position: relative;
+					}
+					&__categorie{
+						margin: 1em 5%;
+						float: left;
+						color: $gold;
+						font-size: $subTitle4;
+						border-left: 2px solid $gold;
+						border-right: 2px solid $gold;
+						width: 30%;
+						text-align: center;
+					}
+					.main__heading3{
+						text-shadow: 2px 2px $black;
+						position: absolute;
+						font-size: $title4;
+						font-weight: 400;
+						top: 5em;
+						left: 5%;
+						margin-right: 5%;
+					}
+					&__date{
+						width: 60%;
+						text-align: right;
+						font-size: $subTitle4;
+						color: $gold;
+						float: right;
+						padding: 1em 5%;
+					}
+				}
+				.preamble{
+					padding: 1em 5%;
+					h4{
+						font-weight: 400;
+						margin-bottom: 0.5em;
+					}
+					p{
+						font-weight: 100;
+						line-height: 1.5em;
+					}
+				}
+				.more{
+					&__link{
+						border-top: 2px solid $gold;
+						color: $gold;
+						text-decoration: none;
+						padding: 1.6em 5%;
+						display: block;
+						font-weight: 100;
+						transition: all 0.2s ease-in-out;
+						margin-top: 1em;
+					}
+					&__link:hover,
+					&__link:focus{
+						background-color: $gold;
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1150px) and (min-width: 771px){	
+	.news{
+		.main__heading2{
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+		.filtre{
+			position: absolute;
+			top: 20em;
+			right: 0;
+			width: 100%;
+			text-align: right;
+			.formulaire{
+				color: $gold;
+				margin: 0 auto;
+				padding: 1em 2.5%;
+				label{
+					display: block;
+					color: $gold;
+					font-size: $title4;
+					margin-bottom: 0.5em;
+					font-weight: 100;
+				}
+				select{
+					padding: 0em 0.5em;
+				    width: 25%;
+				    border: 1px solid $white;
+				    color: $white;
+				    border-radius: 3px;
+				    box-shadow: none;
+				    background: transparent;
+				    font-size: $subText;
+				    font-family: "opensans";
+					option{
+						background-color: $black;
+						box-shadow: none;
+						border: 1px solid white;
+						padding: 0.5em 1em;
+						border-bottom: 1px solid $gold;
+					}
+					option:hover,
+					option:focus{
+					}
+				}
+				select:focus {
+				    outline: none;
+				}
+			}
+		}
+		.actus{
+			padding: 2em 2.5% 3em;
+			display: flex;
+			flex-wrap: wrap;
+			.actu{
+				position: relative;
+				overflow: hidden;
+				margin: 0.25em 0.16%;
+				width: 49.666%;
+				background-color: $black;
+				color: $white;
+				.picture{
+					&__img{
+						width: 100%;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+					&__containerimg{
+						height: 15em;
+						overflow: hidden;
+						position: relative;
+					}
+					&__categorie{
+						margin: 1em 5%;
+						float: left;
+						color: $gold;
+						font-size: $subTitle4;
+						border-left: 2px solid $gold;
+						border-right: 2px solid $gold;
+						width: 30%;
+						text-align: center;
+					}
+					.main__heading3{
+						text-shadow: 2px 2px $black;
+						position: absolute;
+						font-size: $title4;
+						font-weight: 400;
+						top: 5em;
+						left: 5%;
+						margin-right: 5%;
+					}
+					&__date{
+						width: 60%;
+						text-align: right;
+						font-size: $subTitle4;
+						color: $gold;
+						float: right;
+						padding: 1em 5%;
+					}
+				}
+				.preamble{
+					padding: 1em 5%;
+					h4{
+						font-weight: 400;
+						margin-bottom: 0.5em;
+					}
+					p{
+						font-weight: 100;
+						line-height: 1.5em;
+					}
+				}
+				.more{
+					&__link{
+						border-top: 2px solid $gold;
+						color: $gold;
+						text-decoration: none;
+						padding: 1.6em 5%;
+						display: block;
+						font-weight: 100;
+						transition: all 0.2s ease-in-out;
+						margin-top: 1em;
+					}
+					&__link:hover,
+					&__link:focus{
+						background-color: $gold;
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 770px) and (min-width: 601px){	
+	.news{
+		.main__heading2{
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+		.filtre{
+			position: absolute;
+			top: 20em;
+			right: 0;
+			width: 100%;
+			text-align: right;
+			.formulaire{
+				color: $gold;
+				margin: 0 auto;
+				padding: 1em 2.5%;
+				label{
+					display: block;
+					color: $gold;
+					font-size: $title4;
+					margin-bottom: 0.5em;
+					font-weight: 100;
+				}
+				select{
+					padding: 0em 0.5em;
+				    width: 25%;
+				    border: 1px solid $white;
+				    color: $white;
+				    border-radius: 3px;
+				    box-shadow: none;
+				    background: transparent;
+				    font-size: $subText;
+				    font-family: "opensans";
+					option{
+						background-color: $black;
+						box-shadow: none;
+						border: 1px solid white;
+						padding: 0.5em 1em;
+						border-bottom: 1px solid $gold;
+					}
+					option:hover,
+					option:focus{
+					}
+				}
+				select:focus {
+				    outline: none;
+				}
+			}
+		}
+		.actus{
+			padding: 2em 2.5% 3em;
+			display: flex;
+			flex-wrap: wrap;
+			.actu{
+				position: relative;
+				overflow: hidden;
+				margin: 0.25em 0.16%;
+				width: 49.666%;
+				background-color: $black;
+				color: $white;
+				.picture{
+					&__img{
+						height: 100%;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+					&__containerimg{
+						height: 15em;
+						overflow: hidden;
+						position: relative;
+					}
+					&__categorie{
+						margin: 1em 5%;
+						float: left;
+						color: $gold;
+						font-size: $subTitle4;
+						border-left: 2px solid $gold;
+						border-right: 2px solid $gold;
+						width: 30%;
+						text-align: center;
+					}
+					.main__heading3{
+						text-shadow: 2px 2px $black;
+						position: absolute;
+						font-size: $title4;
+						font-weight: 400;
+						top: 5em;
+						left: 5%;
+						margin-right: 5%;
+					}
+					&__date{
+						width: 60%;
+						text-align: right;
+						font-size: $subTitle4;
+						color: $gold;
+						float: right;
+						padding: 1em 5%;
+					}
+				}
+				.preamble{
+					padding: 1em 5%;
+					h4{
+						font-weight: 400;
+						margin-bottom: 0.5em;
+					}
+					p{
+						font-weight: 100;
+						line-height: 1.5em;
+					}
+				}
+				.more{
+					&__link{
+						border-top: 2px solid $gold;
+						color: $gold;
+						text-decoration: none;
+						padding: 1.6em 5%;
+						display: block;
+						font-weight: 100;
+						transition: all 0.2s ease-in-out;
+						margin-top: 1em;
+					}
+					&__link:hover,
+					&__link:focus{
+						background-color: $gold;
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 600px) and (min-width: 381px){	
+	.news{
+		.main__heading2{
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+		.filtre{
+			position: absolute;
+			top: 20em;
+			right: 0;
+			width: 100%;
+			text-align: right;
+			.formulaire{
+				color: $gold;
+				margin: 0 auto;
+				padding: 1em 2.5%;
+				label{
+					display: block;
+					color: $gold;
+					font-size: $title4;
+					margin-bottom: 0.5em;
+					font-weight: 100;
+				}
+				select{
+					padding: 0em 0.5em;
+				    width: 25%;
+				    border: 1px solid $white;
+				    color: $white;
+				    border-radius: 3px;
+				    box-shadow: none;
+				    background: transparent;
+				    font-size: $subText;
+				    font-family: "opensans";
+					option{
+						background-color: $black;
+						box-shadow: none;
+						border: 1px solid white;
+						padding: 0.5em 1em;
+						border-bottom: 1px solid $gold;
+					}
+					option:hover,
+					option:focus{
+					}
+				}
+				select:focus {
+				    outline: none;
+				}
+			}
+		}
+		.actus{
+			padding: 2em 2.5% 3em;
+			display: flex;
+			flex-wrap: wrap;
+			.actu{
+				position: relative;
+				overflow: hidden;
+				margin: 0.25em 0.16%;
+				width: 100%;
+				background-color: $black;
+				color: $white;
+				.picture{
+					&__img{
+						width: 100%;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+					&__containerimg{
+						height: 15em;
+						overflow: hidden;
+						position: relative;
+					}
+					&__categorie{
+						margin: 1em 5%;
+						float: left;
+						color: $gold;
+						font-size: $subTitle4;
+						border-left: 2px solid $gold;
+						border-right: 2px solid $gold;
+						width: 30%;
+						text-align: center;
+					}
+					.main__heading3{
+						text-shadow: 2px 2px $black;
+						position: absolute;
+						font-size: $title4;
+						font-weight: 400;
+						top: 5em;
+						left: 5%;
+						margin-right: 5%;
+					}
+					&__date{
+						width: 60%;
+						text-align: right;
+						font-size: $subTitle4;
+						color: $gold;
+						float: right;
+						padding: 1em 5%;
+					}
+				}
+				.preamble{
+					padding: 1em 5%;
+					h4{
+						font-weight: 400;
+						margin-bottom: 0.5em;
+					}
+					p{
+						font-weight: 100;
+						line-height: 1.5em;
+					}
+				}
+				.more{
+					&__link{
+						border-top: 2px solid $gold;
+						color: $gold;
+						text-decoration: none;
+						padding: 1.6em 5%;
+						display: block;
+						font-weight: 100;
+						transition: all 0.2s ease-in-out;
+						margin-top: 1em;
+					}
+					&__link:hover,
+					&__link:focus{
+						background-color: $gold;
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 380px){	
+	.news{
+		.main__heading2{
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+		.filtre{
+			position: absolute;
+			top: 20em;
+			right: 0;
+			width: 100%;
+			text-align: right;
+			.formulaire{
+				color: $gold;
+				margin: 0 auto;
+				padding: 1em 2.5%;
+				label{
+					display: block;
+					color: $gold;
+					font-size: $title4;
+					margin-bottom: 0.5em;
+					font-weight: 100;
+				}
+				select{
+					padding: 0em 0.5em;
+				    width: 25%;
+				    border: 1px solid $white;
+				    color: $white;
+				    border-radius: 3px;
+				    box-shadow: none;
+				    background: transparent;
+				    font-size: $subText;
+				    font-family: "opensans";
+					option{
+						background-color: $black;
+						box-shadow: none;
+						border: 1px solid white;
+						padding: 0.5em 1em;
+						border-bottom: 1px solid $gold;
+					}
+					option:hover,
+					option:focus{
+					}
+				}
+				select:focus {
+				    outline: none;
+				}
+			}
+		}
+		.actus{
+			padding: 2em 2.5% 3em;
+			display: flex;
+			flex-wrap: wrap;
+			.actu{
+				position: relative;
+				overflow: hidden;
+				margin: 0.25em 0.16%;
+				width: 100%;
+				background-color: $black;
+				color: $white;
+				.picture{
+					&__img{
+						height: 100%;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+					&__containerimg{
+						height: 15em;
+						overflow: hidden;
+						position: relative;
+					}
+					&__categorie{
+						margin: 1em 5%;
+						float: left;
+						color: $gold;
+						font-size: $subTitle4;
+						border-left: 2px solid $gold;
+						border-right: 2px solid $gold;
+						width: 30%;
+						text-align: center;
+					}
+					.main__heading3{
+						text-shadow: 2px 2px $black;
+						position: absolute;
+						font-size: $title4;
+						font-weight: 400;
+						top: 5em;
+						left: 5%;
+						margin-right: 5%;
+					}
+					&__date{
+						width: 60%;
+						text-align: right;
+						font-size: $subTitle4;
+						color: $gold;
+						float: right;
+						padding: 1em 5%;
+					}
+				}
+				.preamble{
+					padding: 1em 5%;
+					h4{
+						font-weight: 400;
+						margin-bottom: 0.5em;
+					}
+					p{
+						font-weight: 100;
+						line-height: 1.5em;
+					}
+				}
+				.more{
+					&__link{
+						border-top: 2px solid $gold;
+						color: $gold;
+						text-decoration: none;
+						padding: 1.6em 5%;
+						display: block;
+						font-weight: 100;
+						transition: all 0.2s ease-in-out;
+						margin-top: 1em;
+					}
+					&__link:hover,
+					&__link:focus{
+						background-color: $gold;
+						color: $black;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,525 @@
+.questions{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	@media screen and (min-width: 681px){
+		.main__heading2{
+			width: 100%;
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (max-width: 680px){
+		.main__heading2{
+			width: 100%;
+			font-size: $subTitle3;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 2em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (min-width: 1851px){
+		&__bloc{
+			width: 50%;
+			max-width: 800px;
+			margin: 2em 0 3em auto;
+		}
+		&__quest{
+		}
+		&__quest:hover :nth-child(-n+2){
+			display: block;
+		}
+		&__quest:nth-child(odd){
+			background-color: $lightGrey;
+		}
+		&__quest:nth-child(even){
+			background-color: $darkGrey;
+		}
+		&__demande{
+			cursor: pointer;
+			padding: 1rem 1rem;
+			font-weight: 800;
+			font-size: $subTitle4;
+			&--txt{
+
+			}
+		}
+		&__reponse{
+			display: none;
+			padding: 2rem 1rem;
+			background-color: $black;
+			color: $white;
+			line-height: 1.35em;
+			font-weight: 100;
+			&--txt{
+				margin-bottom: 1em;
+			}
+		}
+		.question{
+			margin: 2em auto 3em 5%;
+			width: 40%;
+			max-width: 800px;
+			.main__heading3{
+				width: 100%;
+				font-size: $title4;
+				background-color: $black;
+				color: $gold;
+				margin: 0 auto;
+				padding: 0.8em 1.2em;
+			}
+			.main__heading3:before{
+				content:"";
+				position: relative;
+				right: 15px;
+				border-left: 2px solid $gold;
+			}
+			.form{
+				margin: 2em 0;
+				.nf-form-fields-required{
+					margin-bottom: 1em;
+				}
+				label{
+					display: block;
+					width: 100%;
+					margin-bottom: 1em;
+					font-size: $subTitle4;
+				}
+				input{
+					font-size: $currentText;
+					margin-bottom: 2em;
+					width: 100%;
+					border: 2px solid $gold;
+					padding: 1em 2em;
+				}
+				input:hover,
+				input:focus{
+					font-size: $currentText;
+					margin-bottom: 2em;
+					width: 100%;
+					border: 2px solid $black;
+				}
+				.ninja-forms-field:hover,
+				.ninja-forms-field:focus{
+					font-size: $currentText;
+					margin-bottom: 2em;
+					width: 100%;
+					border: 2px solid $black;
+				}
+				nf-field:nth-child(1){
+					margin-right: 5%;
+				}
+				nf-field:nth-child(-n+2){
+					width: 46.89%;
+					display: inline-block;
+				}
+				#nf-field-14{
+					cursor: pointer;
+					margin-top: 1em;
+					width: 50%;
+					color: $gold;
+					font-weight: bold;
+					transition: all 0.2s ease-in-out;
+				}
+				.nf-field-element{
+					width: 100%;
+				}
+				#nf-field-14:hover,
+				#nf-field-14:focus{
+					background-color: $gold;
+					color: $white;
+					border: 2px solid $white;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 1850px) and (min-width: 851px){
+		&__bloc{
+			width: 50%;
+			margin: 2em 0 3em 2.5%;
+		}
+		&__quest{
+		}
+		&__quest:hover :nth-child(2),
+		&__quest:focus :nth-child(2){
+			display: block;
+		}
+		&__quest:nth-child(odd){
+			background-color: $lightGrey;
+		}
+		&__quest:nth-child(even){
+			background-color: $darkGrey;
+		}
+		&__demande{
+			cursor: pointer;
+			padding: 1rem 1rem;
+			font-weight: 800;
+			font-size: $subTitle4;
+			&--txt{
+
+			}
+		}
+		&__reponse{
+			display: none;
+			padding: 2rem 1rem;
+			background-color: $black;
+			color: $white;
+			line-height: 1.35em;
+			font-weight: 100;
+			&--txt{
+				margin-bottom: 1em;
+			}
+		}
+		.question{
+			margin: 2em 2.5% 3em 5%;
+			width: 40%;
+			.main__heading3{
+				width: 100%;
+				font-size: $title4;
+				background-color: $black;
+				color: $gold;
+				margin: 0 auto;
+				padding: 0.8em 1.2em;
+			}
+			.main__heading3:before{
+				content:"";
+				position: relative;
+				right: 15px;
+				border-left: 2px solid $gold;
+			}
+			.form{
+				margin: 2em 0;
+				.nf-form-fields-required{
+					margin-bottom: 1em;
+				}
+				label{
+					display: block;
+					width: 100%;
+					margin-bottom: 1em;
+					font-size: $subTitle4;
+				}
+				input{
+					font-size: $currentText;
+					margin-bottom: 2em;
+					width: 100%;
+					border: 2px solid $gold;
+					padding: 1em 2em;
+				}
+				input:hover,
+				input:focus{
+					font-size: $currentText;
+					margin-bottom: 2em;
+					width: 100%;
+					border: 2px solid $black;
+				}
+				.ninja-forms-field:hover,
+				.ninja-forms-field:focus{
+					font-size: $currentText;
+					margin-bottom: 2em;
+					width: 100%;
+					border: 2px solid $black;
+				}
+				nf-field:nth-child(1){
+					margin-right: 5%;
+				}
+				nf-field:nth-child(-n+2){
+					width: 46.89%;
+					display: inline-block;
+				}
+				#nf-field-14{
+					cursor: pointer;
+					margin-top: 1em;
+					width: 50%;
+					color: $gold;
+					font-weight: bold;
+					transition: all 0.2s ease-in-out;
+				}
+				.nf-field-element{
+					width: 100%;
+				}
+				#nf-field-14:hover,
+				#nf-field-14:focus{
+					background-color: $gold;
+					color: $white;
+					border: 2px solid $white;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 850px) and (min-width: 451px){
+		&__bloc{
+			width: 100%;
+			margin: 2em 2.5% 3em;
+		}
+		&__quest{
+		}
+		&__quest:hover :nth-child(2),
+		&__quest:focus :nth-child(2){
+			display: block;
+		}
+		&__quest:nth-child(odd){
+			background-color: $lightGrey;
+		}
+		&__quest:nth-child(even){
+			background-color: $darkGrey;
+		}
+		&__demande{
+			cursor: pointer;
+			padding: 1rem 1rem;
+			font-weight: 800;
+			font-size: $subTitle4;
+			&--txt{
+
+			}
+		}
+		&__reponse{
+			display: none;
+			padding: 2rem 1rem;
+			background-color: $black;
+			color: $white;
+			line-height: 1.35em;
+			font-weight: 100;
+			&--txt{
+				margin-bottom: 1em;
+			}
+		}
+		.question{
+			margin: 2em 2.5% 3em;
+			width: 100%;
+			.main__heading3{
+				width: 100%;
+				font-size: $title4;
+				background-color: $black;
+				color: $gold;
+				margin: 0 auto;
+				padding: 0.8em 1.2em;
+			}
+			.main__heading3:before{
+				content:"";
+				position: relative;
+				right: 15px;
+				border-left: 2px solid $gold;
+			}
+			.form{
+				margin: 2em 0;
+				.nf-form-fields-required{
+					margin-bottom: 1em;
+				}
+				label{
+					display: block;
+					width: 100%;
+					margin-bottom: 1em;
+					font-size: $subTitle4;
+				}
+				input{
+					font-size: $currentText;
+					margin-bottom: 2em;
+					width: 100%;
+					border: 2px solid $gold;
+					padding: 1em 2em;
+				}
+				input:hover,
+				input:focus{
+					font-size: $currentText;
+					margin-bottom: 2em;
+					width: 100%;
+					border: 2px solid $black;
+				}
+				.ninja-forms-field:hover,
+				.ninja-forms-field:focus{
+					font-size: $currentText;
+					margin-bottom: 2em;
+					width: 100%;
+					border: 2px solid $black;
+				}
+				.nf-fields-wrap:nth-of-type(2){
+					margin-right: 5%;
+				}
+				.nf-fields-wrap:nth-of-type(-n+3){
+					width: 47%;
+					display: inline-block;
+				}
+				#nf-field-14{
+					cursor: pointer;
+					margin-top: 1em;
+					width: 50%;
+					color: $gold;
+					font-weight: bold;
+					transition: all 0.2s ease-in-out;
+				}
+				.nf-field-element{
+					width: 100%;
+				}
+				#nf-field-14:hover,
+				#nf-field-14:focus{
+					background-color: $gold;
+					color: $white;
+					border: 2px solid $white;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 450px){
+		&__bloc{
+			width: 100%;
+			margin: 2em 2.5% 3em;
+		}
+		&__quest{
+		}
+		&__quest:hover :nth-child(2),
+		&__quest:focus :nth-child(2){
+			display: block;
+		}
+		&__quest:nth-child(odd){
+			background-color: $lightGrey;
+		}
+		&__quest:nth-child(even){
+			background-color: $darkGrey;
+		}
+		&__demande{
+			cursor: pointer;
+			padding: 1rem 1rem;
+			font-weight: 800;
+			font-size: $subTitle4;
+			&--txt{
+
+			}
+		}
+		&__reponse{
+			display: none;
+			padding: 2rem 1rem;
+			background-color: $black;
+			color: $white;
+			line-height: 1.35em;
+			font-weight: 100;
+			&--txt{
+				margin-bottom: 1em;
+			}
+		}
+		.question{
+			margin: 2em 2.5% 3em;
+			width: 100%;
+			.main__heading3{
+				width: 100%;
+				font-size: $title4;
+				background-color: $black;
+				color: $gold;
+				margin: 0 auto;
+				padding: 0.8em 1.2em;
+			}
+			.main__heading3:before{
+				content:"";
+				position: relative;
+				right: 15px;
+				border-left: 2px solid $gold;
+			}
+			.form{
+				margin: 2em 0;
+				.nf-form-fields-required{
+					margin-bottom: 1em;
+				}
+				label{
+					display: block;
+					width: 100%;
+					margin-bottom: 1em;
+					font-size: $subTitle4;
+				}
+				input{
+					font-size: $currentText;
+					margin-bottom: 2em;
+					width: 100%;
+					border: 2px solid $gold;
+					padding: 1em 2em;
+				}
+				input:hover,
+				input:focus{
+					font-size: $currentText;
+					margin-bottom: 2em;
+					width: 100%;
+					border: 2px solid $black;
+				}
+				.ninja-forms-field:hover,
+				.ninja-forms-field:focus{
+					font-size: $currentText;
+					margin-bottom: 2em;
+					width: 100%;
+					border: 2px solid $black;
+				}
+				#nf-field-14{
+					cursor: pointer;
+					margin-top: 1em;
+					width: 100%;
+					color: $gold;
+					font-weight: bold;
+					transition: all 0.2s ease-in-out;
+				}
+				.nf-field-element{
+					width: 100%;
+				}
+				#nf-field-14:hover,
+				#nf-field-14:focus{
+					background-color: $gold;
+					color: $white;
+					border: 2px solid $white;
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 681px){
+		.CTA{
+			width: 13em;
+			text-align: center;
+			margin: -3em 2.5% 0;
+			background-color: $gold;
+			transition: all 0.2s ease-in-out;
+			position: absolute;
+			top: 6em;
+			right: 0;
+			&__link{
+				padding: 1em 1.6em;
+				display: block;
+				color: $white;
+				text-decoration: none;
+				font-weight: 100;
+			}
+		}
+		.CTA:hover,
+		.CTA:focus{
+			background-color: $darkGold;
+		}
+	}
+	@media screen and (max-width: 680px){
+		.CTA{
+			width: 100%;
+			text-align: center;
+			background-color: $gold;
+			transition: all 0.2s ease-in-out;
+			&__link{
+				padding: 1em 1.6em;
+				display: block;
+				color: $white;
+				text-decoration: none;
+				font-weight: 100;
+			}
+		}
+		.CTA:hover,
+		.CTA:focus{
+			background-color: $darkGold;
+		}
+	}
+}

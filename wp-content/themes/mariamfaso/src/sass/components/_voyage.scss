@@ -1,0 +1,709 @@
+.travel{
+	display: flex;
+	flex-wrap: wrap;
+	@media screen and (min-width: 681px){
+		.main__heading2{
+			width: 100%;
+			font-size: $subTitle2;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 0.8em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (max-width: 680px){
+		.main__heading2{
+			width: 100%;
+			font-size: $subTitle3;
+			background-color: $black;
+			color: $gold;
+			margin: 0 auto;
+			padding: 2em 2.5%;
+		}
+		.main__heading2:before{
+			content:"";
+			position: relative;
+			right: 15px;
+			border-left: 2px solid $gold;
+		}
+	}
+	@media screen and (min-width: 1851px){
+		.form{
+			max-width: 800px;
+			width: 45%;
+			margin: 2em 0 3em auto;
+			.cond{
+				margin-bottom: 2em;
+			}
+			&__cond{
+				text-decoration: none;
+				color: $gold;
+				font-weight: 600;
+				font-size: $subTitle4;
+				transition: all 0.2s ease-in-out;
+			}
+			&__cond:hover,
+			&__cond:focus{
+				color: $darkGold;
+			}
+			.nf-form-fields-required{
+				margin-bottom: 1em;
+			}
+			label{
+				display: block;
+				width: 100%;
+				margin-bottom: 0.5em;
+				font-size: $subTitle4;
+			}
+			input{
+				font-size: $currentText;
+				margin-bottom: 2em;
+				width: 100%;
+				border: 2px solid $gold;
+				padding: 1em 2em;
+			}
+			nf-field:nth-child(1),
+			nf-field:nth-child(3){
+				margin-right: 5%;
+			}
+			nf-field:nth-child(1),
+			nf-field:nth-child(2){
+				width: 47%;
+				display: inline-block;
+			}
+			nf-field:nth-child(3){
+				width: 64%;
+				display: inline-block;
+			}
+			nf-field:nth-child(4){
+				width: 30%;
+				display: inline-block;
+			}
+			.ninja-forms-field:hover,
+			.ninja-forms-field:focus,
+			#nf-field-19:hover,
+			#nf-field-19:focus{
+				font-size: $currentText;
+				margin-bottom: 2em;
+				width: 100%;
+				border: 2px solid $black;
+			}
+			input[type=number]{
+				appearance: none;
+				font-size: $currentText;
+				margin-bottom: 2em;
+				border: 2px solid $gold;
+				padding: 1em 2em;
+			}
+			#nf-field-20{
+				cursor: pointer;
+				margin-top: 1em;
+				width: 50%;
+				color: $gold;
+				font-weight: bold;
+				transition: all 0.2s ease-in-out;
+			}
+			.nf-field-element{
+				width: 100%;
+			}
+			#nf-field-20:hover,
+			#nf-field-20:focus{
+				background-color: $gold;
+				color: $white;
+				border: 2px solid $white;
+			}
+			#nf-field-19{
+				resize: vertical;
+				max-height: 300px;
+				font-family: "opensans";
+				margin-bottom: 2em;
+				width: 100%;
+				border: 2px solid $gold;
+				padding: 1.2em 2em;
+			}
+		}
+		.links{
+			max-width: 800px;
+			width: 45%;
+			margin: 2em auto 3em 0;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			.contact{
+				width: 60%;
+				margin: 0 auto 2em;
+				.list{
+					&__elt{
+						line-height: 1.35em;
+					}
+					&__link{
+						text-decoration: none;
+						color: $gold;
+						span{
+							color: $black;
+						}
+					}
+				}
+			}
+			.follow{
+				width: 60%;
+				margin: 0 auto 2em;
+				.list{
+					display: flex;
+					&__elt{
+						margin: auto;
+					}
+					&__link{
+						text-decoration: none;
+	                    .st0{
+	                        fill: $black;
+	                    }
+	                    .st1{
+	                    	fill: $gold;
+	                    	transition: all 0.2s ease-in-out;
+
+	                    }
+					}
+					&__link:hover,
+					&__link:focus{
+						.st1{
+	                    	fill: $darkGold;
+	                    }
+					}
+				}
+			}
+			.CTA{
+				width: 60%;
+				margin: 0 auto 2em;
+				.list{
+
+					&__elt{
+						width: 100%;
+						line-height: 1.35em;
+						text-align: center;
+						margin: 1em 0;
+						background-color: $gold;
+						transition: all 0.2s ease-in-out;
+						&--link{
+							padding: 1em 1.6em;
+							display: block;
+							color: $white;
+							text-decoration: none;
+							font-weight: 100;
+						}
+					}
+					&__elt:hover,
+					&__elt:focus{
+						background-color: $darkGold;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 1850px) and (min-width: 951px){
+		.form{
+			width: 45%;
+			margin: 2em 0 3em 2.5%;
+			.cond{
+				margin-bottom: 2em;
+			}
+			&__cond{
+				text-decoration: none;
+				color: $gold;
+				font-weight: 600;
+				font-size: $subTitle4;
+				transition: all 0.2s ease-in-out;
+			}
+			&__cond:hover,
+			&__cond:focus{
+				color: $darkGold;
+			}
+			.nf-form-fields-required{
+				margin-bottom: 1em;
+			}
+			label{
+				display: block;
+				width: 100%;
+				margin-bottom: 0.5em;
+				font-size: $subTitle4;
+			}
+			input{
+				font-size: $currentText;
+				margin-bottom: 2em;
+				width: 100%;
+				border: 2px solid $gold;
+				padding: 1em 2em;
+			}
+			nf-field:nth-child(1),
+			nf-field:nth-child(3){
+				margin-right: 5%;
+			}
+			nf-field:nth-child(1),
+			nf-field:nth-child(2){
+				width: 47%;
+				display: inline-block;
+			}
+			nf-field:nth-child(3){
+				width: 47%;
+				display: inline-block;
+			}
+			nf-field:nth-child(4){
+				width: 47%;
+				display: inline-block;
+			}
+			.ninja-forms-field:hover,
+			.ninja-forms-field:focus,
+			#nf-field-19:hover,
+			#nf-field-19:focus{
+				font-size: $currentText;
+				margin-bottom: 2em;
+				width: 100%;
+				border: 2px solid $black;
+			}
+			input[type=number]{
+				appearance: none;
+				font-size: $currentText;
+				margin-bottom: 2em;
+				border: 2px solid $gold;
+				padding: 1em 2em;
+			}
+			#nf-field-20{
+				cursor: pointer;
+				margin-top: 1em;
+				width: 50%;
+				color: $gold;
+				font-weight: bold;
+				transition: all 0.2s ease-in-out;
+			}
+			.nf-field-element{
+				width: 100%;
+			}
+			#nf-field-20:hover,
+			#nf-field-20:focus{
+				background-color: $gold;
+				color: $white;
+				border: 2px solid $white;
+			}
+			#nf-field-19{
+				resize: vertical;
+				max-height: 300px;
+				font-family: "opensans";
+				margin-bottom: 2em;
+				width: 100%;
+				border: 2px solid $gold;
+				padding: 1.2em 2em;
+			}
+		}
+		.links{
+			width: 45%;
+			margin: 2em 2.5% 3em 0;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			.contact{
+				width: 60%;
+				margin: 0 auto 2em;
+				.list{
+					&__elt{
+						line-height: 1.35em;
+					}
+					&__link{
+						text-decoration: none;
+						color: $gold;
+						span{
+							color: $black;
+						}
+					}
+				}
+			}
+			.follow{
+				width: 60%;
+				margin: 0 auto 2em;
+				.list{
+					display: flex;
+					&__elt{
+						margin: auto;
+					}
+					&__link{
+						text-decoration: none;
+	                    .st0{
+	                        fill: $black;
+	                    }
+	                    .st1{
+	                    	fill: $gold;
+	                    	transition: all 0.2s ease-in-out;
+
+	                    }
+					}
+					&__link:hover,
+					&__link:focus{
+						.st1{
+	                    	fill: $darkGold;
+	                    }
+					}
+				}
+			}
+			.CTA{
+				width: 60%;
+				margin: 0 auto 2em;
+				.list{
+
+					&__elt{
+						width: 100%;
+						line-height: 1.35em;
+						text-align: center;
+						margin: 1em 0;
+						background-color: $gold;
+						transition: all 0.2s ease-in-out;
+						&--link{
+							padding: 1em 1.6em;
+							display: block;
+							color: $white;
+							text-decoration: none;
+							font-weight: 100;
+						}
+					}
+					&__elt:hover,
+					&__elt:focus{
+						background-color: $darkGold;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 950px) and (min-width: 451px){
+		.form{
+			width: 100%;
+			margin: 2em 2.5% 3em 2.5%;
+			.cond{
+				margin-bottom: 2em;
+			}
+			&__cond{
+				text-decoration: none;
+				color: $gold;
+				font-weight: 600;
+				font-size: $subTitle4;
+				transition: all 0.2s ease-in-out;
+			}
+			&__cond:hover,
+			&__cond:focus{
+				color: $darkGold;
+			}
+			.nf-form-fields-required{
+				margin-bottom: 1em;
+			}
+			label{
+				display: block;
+				width: 100%;
+				margin-bottom: 0.5em;
+				font-size: $subTitle4;
+			}
+			input{
+				font-size: $currentText;
+				margin-bottom: 2em;
+				width: 100%;
+				border: 2px solid $gold;
+				padding: 1em 2em;
+			}
+			nf-field:nth-child(1),
+			nf-field:nth-child(3){
+				margin-right: 5%;
+			}
+			nf-field:nth-child(1),
+			nf-field:nth-child(2){
+				width: 47%;
+				display: inline-block;
+			}
+			nf-field:nth-child(3){
+				width: 64%;
+				display: inline-block;
+			}
+			nf-field:nth-child(4){
+				width: 30%;
+				display: inline-block;
+			}
+			.ninja-forms-field:hover,
+			.ninja-forms-field:focus,
+			#nf-field-19:hover,
+			#nf-field-19:focus{
+				font-size: $currentText;
+				margin-bottom: 2em;
+				width: 100%;
+				border: 2px solid $black;
+			}
+			input[type=number]{
+				appearance: none;
+				font-size: $currentText;
+				margin-bottom: 2em;
+				border: 2px solid $gold;
+				padding: 1em 2em;
+			}
+			#nf-field-20{
+				cursor: pointer;
+				margin-top: 1em;
+				width: 50%;
+				color: $gold;
+				font-weight: bold;
+				transition: all 0.2s ease-in-out;
+			}
+			.nf-field-element{
+				width: 100%;
+			}
+			#nf-field-20:hover,
+			#nf-field-20:focus{
+				background-color: $gold;
+				color: $white;
+				border: 2px solid $white;
+			}
+			#nf-field-19{
+				resize: vertical;
+				max-height: 300px;
+				font-family: "opensans";
+				margin-bottom: 2em;
+				width: 100%;
+				border: 2px solid $gold;
+				padding: 1.2em 2em;
+			}
+		}
+		.links{
+			width: 100%;
+			margin: 2em 2.5% 3em 2.5%;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			.contact{
+				width: 100%;
+				margin: 0 auto 2em;
+				.list{
+					&__elt{
+						line-height: 1.35em;
+					}
+					&__link{
+						text-decoration: none;
+						color: $gold;
+						span{
+							color: $black;
+						}
+					}
+				}
+			}
+			.follow{
+				width: 100%;
+				margin: 0 auto 2em;
+				.list{
+					display: flex;
+					&__elt{
+						margin: auto;
+					}
+					&__link{
+						text-decoration: none;
+	                    .st0{
+	                        fill: $black;
+	                    }
+	                    .st1{
+	                    	fill: $gold;
+	                    	transition: all 0.2s ease-in-out;
+
+	                    }
+					}
+					&__link:hover,
+					&__link:focus{
+						.st1{
+	                    	fill: $darkGold;
+	                    }
+					}
+				}
+			}
+			.CTA{
+				width: 100%;
+				margin: 0 auto 2em;
+				.list{
+
+					&__elt{
+						width: 100%;
+						line-height: 1.35em;
+						text-align: center;
+						margin: 1em 0;
+						background-color: $gold;
+						transition: all 0.2s ease-in-out;
+						&--link{
+							padding: 1em 1.6em;
+							display: block;
+							color: $white;
+							text-decoration: none;
+							font-weight: 100;
+						}
+					}
+					&__elt:hover,
+					&__elt:focus{
+						background-color: $darkGold;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 450px){
+		.form{
+			width: 100%;
+			margin: 2em 2.5% 3em 2.5%;
+			.cond{
+				margin-bottom: 2em;
+			}
+			&__cond{
+				text-decoration: none;
+				color: $gold;
+				font-weight: 600;
+				font-size: $subTitle4;
+				transition: all 0.2s ease-in-out;
+			}
+			&__cond:hover,
+			&__cond:focus{
+				color: $darkGold;
+			}
+			.nf-form-fields-required{
+				margin-bottom: 1em;
+			}
+			label{
+				display: block;
+				width: 100%;
+				margin-bottom: 0.5em;
+				font-size: $subTitle4;
+			}
+			input{
+				font-size: $currentText;
+				margin-bottom: 2em;
+				width: 100%;
+				border: 2px solid $gold;
+				padding: 1em 2em;
+			}
+			.ninja-forms-field:hover,
+			.ninja-forms-field:focus,
+			#nf-field-19:hover,
+			#nf-field-19:focus{
+				font-size: $currentText;
+				margin-bottom: 2em;
+				width: 100%;
+				border: 2px solid $black;
+			}
+			input[type=number]{
+				appearance: none;
+				font-size: $currentText;
+				margin-bottom: 2em;
+				border: 2px solid $gold;
+				padding: 1em 2em;
+			}
+			#nf-field-20{
+				cursor: pointer;
+				margin-top: 1em;
+				width: 100%;
+				color: $gold;
+				font-weight: bold;
+				transition: all 0.2s ease-in-out;
+			}
+			.nf-field-element{
+				width: 100%;
+			}
+			#nf-field-20:hover,
+			#nf-field-20:focus{
+				background-color: $gold;
+				color: $white;
+				border: 2px solid $white;
+			}
+			#nf-field-19{
+				resize: vertical;
+				max-height: 300px;
+				font-family: "opensans";
+				margin-bottom: 2em;
+				width: 100%;
+				border: 2px solid $gold;
+				padding: 1.2em 2em;
+			}
+		}
+		.links{
+			width: 100%;
+			margin: 2em 2.5% 3em 2.5%;
+			.main__heading3{
+				font-size: $subTitle3;
+				margin-bottom: 1em;
+			}
+			.contact{
+				width: 100%;
+				margin: 0 auto 2em;
+				.list{
+					&__elt{
+						line-height: 1.35em;
+					}
+					&__link{
+						text-decoration: none;
+						color: $gold;
+						span{
+							color: $black;
+						}
+					}
+				}
+			}
+			.follow{
+				width: 100%;
+				margin: 0 auto 2em;
+				.list{
+					display: flex;
+					&__elt{
+						margin: auto;
+					}
+					&__link{
+						text-decoration: none;
+	                    .st0{
+	                        fill: $black;
+	                    }
+	                    .st1{
+	                    	fill: $gold;
+	                    	transition: all 0.2s ease-in-out;
+
+	                    }
+					}
+					&__link:hover,
+					&__link:focus{
+						.st1{
+	                    	fill: $darkGold;
+	                    }
+					}
+				}
+			}
+			.CTA{
+				width: 100%;
+				margin: 0 auto 2em;
+				.list{
+
+					&__elt{
+						width: 100%;
+						line-height: 1.35em;
+						text-align: center;
+						margin: 1em 0;
+						background-color: $gold;
+						transition: all 0.2s ease-in-out;
+						&--link{
+							padding: 1em 1.6em;
+							display: block;
+							color: $white;
+							text-decoration: none;
+							font-weight: 100;
+						}
+					}
+					&__elt:hover,
+					&__elt:focus{
+						background-color: $darkGold;
+					}
+				}
+			}
+		}
+	}
+}
